@@ -9,6 +9,11 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+h1,
+h2, {
+    text-transform: uppercase;
+}
+
 /* Nishavijai worked on the following CSS for (chingu process, program overview and past projects) */
 
 .container{
