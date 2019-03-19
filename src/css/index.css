@@ -28,7 +28,7 @@ h2, {
     grid-gap: 0.75em;
 }
 
-#overview{
+#overview, #testimonials {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "tier1 tier2 tier3";
