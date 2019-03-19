@@ -6,7 +6,9 @@
 } 
 */
 
+/*Nishavijai commenting the following global styles, since it affects the styles in the follwing divs */
 /* Global Styles */
+/*
 body {
     font-family: 'Raleway', sans-serif;
 }
@@ -15,6 +17,7 @@ h1,
 h2, {
     text-transform: uppercase;
 }
+*/
 
 /* Nishavijai worked on the following CSS for (chingu process, program overview and past projects) */
 /*html and body GLOBAL to not to have a white space on the corners */
@@ -75,7 +78,6 @@ div{
     color: #7f7f7f;
     line-height: 22.4px;  
 }
-
 /* div - process ends */
 
 /* div - overview starts*/
@@ -86,11 +88,10 @@ div{
     margin: 0 auto;
 }
 
-#overview, #testimonials {
+#overview{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "tier1 tier2 tier3";
-    
     background-color: #F8F8F8;
     padding: 28px 0px 28px 0px;
     margin: 0 auto;
@@ -98,12 +99,59 @@ div{
     align-items: center;
 }
 
-.pro-overview, .testimonials {
+.pro-overview{
     background-color: #BBBBBB;
+    font-weight: 450;
+    font-size: 19.6px;
+    line-height: 31.36px;
     color: white;
+    letter-spacing: 2px;
+    padding: 9px 0px 0px 0px;
+    border-radius: 0px;  
+}
+
+.container-projects img{
+    width: 200px;
+    height: 200px;
+}
+
+#overview h2{
+    font-weight: 400;
+    font-size: 21px;
+    text-align: center;
+    color: #7f7f7f;
+    line-height: 33.6px;
+    padding: 10px 0px 10px 0px;
+}
+
+#overview p{
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    color: #7f7f7f;
+    line-height: 22.4px; 
+    padding: 0px 0px 20px 0px; 
+    margin: 0 auto;
+    max-width: 250px; /*To display text in the middle*/
+}
+/* div - overview ends */
+
+/* div - projects starts */
+.container-projects{
+    background-color: #ffffff;
+    text-align: center;
+    padding-top: 1px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container-projects h1{
     font-weight: 500;
-    font-size: 20px;
-    line-height: 31px;   
+    font-size: 26.6px;
+    line-height: 42.56px;
+    color: #7f7f7f; 
+    letter-spacing: 2px;
+    padding-top: 50px;
 }
 
 #projects{
