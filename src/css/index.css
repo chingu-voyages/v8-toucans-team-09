@@ -4,6 +4,11 @@
   padding: 0;
 } 
 
+/* Global Styles */
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
 /* Nishavijai worked on the following CSS for (chingu process, program overview and past projects) */
 
 .container{
