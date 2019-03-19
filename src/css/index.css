@@ -36,11 +36,12 @@ h2, {
     background-color: #F8F8F8;
 }
 
-.pro-overview{
+.pro-overview, .testimonials {
     background-color: #BBBBBB;
-    font-family: sans-serif;
     color: white;
-    font-weight: 100;   
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 31px;   
 }
 
 #projects{
