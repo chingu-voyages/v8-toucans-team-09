@@ -1,43 +1,176 @@
 /* CSS reset rule */
+/* Nishavijai commenting the following to test the divs
 * {
   margin: 0;
   padding: 0;
 } 
+*/
 
 /* Nishavijai worked on the following CSS for (chingu process, program overview and past projects) */
+/*html and body GLOBAL to not to have a white space on the corners */
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
 
-.container{
-    display: grid;
+/* body */
+body{
+    font-family: "Open Sans", "Helvetica Neue", Raleway, sans-serif;
+}
+
+/*div*/
+div{
+    display: block;
+}
+
+/* div - process starts*/
+.container-process{
+    background-color: #ffffff;
     text-align: center;
+    padding-top: 1px;
+    width: 100%;
+    margin: 0 auto; 
+}
+
+.container-process h1{
+    font-weight: 500;
+    font-size: 26.6px;
+    line-height: 42.56px;
+    color: #7f7f7f; 
+    letter-spacing: 2px;
 }
 
 #process{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas: "apply join build succeed";
-    grid-gap: 0.75em;
+    grid-gap: 0.1em;
+    padding: 28px 0px 28px 0px;
+}
+
+#process h2{
+    font-weight: 400;
+    font-size: 21px;
+    color: #7f7f7f;
+    line-height: 33.6px;
+}
+
+#process p{
+    font-weight: 400;
+    font-size: 14px;
+    color: #7f7f7f;
+    line-height: 22.4px;  
+}
+
+/* div - process ends */
+
+/* div - overview starts*/
+.container-overview{
+    background-color: #BBBBBB;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
 }
 
 #overview{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "tier1 tier2 tier3";
-    grid-gap: 0.75em;
+    
     background-color: #F8F8F8;
+    padding: 28px 0px 28px 0px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
 }
 
 .pro-overview{
     background-color: #BBBBBB;
-    font-family: sans-serif;
+    font-weight: 450;
+    font-size: 19.6px;
+    line-height: 31.36px;
     color: white;
-    font-weight: 100;   
+    letter-spacing: 2px;
+    padding: 9px 0px 0px 0px;
+    border-radius: 0px;
+}
+
+
+.container-projects img{
+    width: 200px;
+    height: 200px;
+}
+
+#overview h2{
+    font-weight: 400;
+    font-size: 21px;
+    text-align: center;
+    color: #7f7f7f;
+    line-height: 33.6px;
+    padding: 10px 0px 10px 0px;
+}
+
+#overview p{
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    color: #7f7f7f;
+    line-height: 22.4px; 
+    padding: 0px 0px 20px 0px; 
+    margin: 0 auto;
+    max-width: 250px; /*To display text in the middle*/
+}
+/* div - overview ends */
+
+/* div - projects starts */
+.container-projects{
+    background-color: #ffffff;
+    text-align: center;
+    padding-top: 1px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container-projects h1{
+    font-weight: 500;
+    font-size: 26.6px;
+    line-height: 42.56px;
+    color: #7f7f7f; 
+    letter-spacing: 2px;
+    padding-top: 50px;
 }
 
 #projects{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "tickybot sona-sarovar comment";
-    grid-gap: 0.75em;
+    grid-gap: 0.1em;
+    padding: 28px 0px 28px 0px;
 }
 
+.container-projects img{
+    width: 300px;
+    height: 200px;
+}
+
+#projects h2{
+    font-weight: 400;
+    font-size: 21px;
+    text-align: center;
+    color: #7f7f7f;
+    line-height: 33.6px;
+}
+
+#projects p{
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    color: #7f7f7f;
+    line-height: 22.4px;  
+}
+/* div - projects ends */
 /* Nishavijai worked on the above CSS for (chingu process, program overview and past projects) */
