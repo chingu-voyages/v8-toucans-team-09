@@ -1,7 +1,8 @@
 /* CSS reset rule */
 * {
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 } 
 
 html,body
@@ -167,3 +168,69 @@ div{
 }
 /* div - projects ends */
 /* Nishavijai worked on the above CSS for (chingu process, program overview and past projects) */
+/* Frankie worked on the below CSS for (What people are saying, Ready to chingu and the footer) */
+
+.container-testimonials {
+    background-color: #bbbbbb;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+}
+
+#testimonials {
+    align-items: center;
+    background-color: #F8F8F8;
+    display: grid;
+    grid-template-areas: "testimonials testimonials testimonials";
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 28px 0 28px 0;
+}
+
+.testimonials {
+    margin: 0 1.5rem;
+}
+
+.title-testimonials {
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 31px;
+}
+
+.testimonial-box {
+    position: relative;
+    height: 175px;
+    width: 320px;
+    background-color: #fff;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 3px 6px #e6e6e6;
+    text-align: left;
+    margin: 50px 0 0;    
+}
+
+.testimonial-box .testimonial-text {
+    color: #7f7f7f;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.testimonial-user {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;    
+    margin: 2rem -1rem 50px;
+}
+
+.testimonial-user img {
+    border-radius: 100%;
+    margin-right: 10px;
+    object-fit: cover;
+    
+}
+/* Frankie worked on the above CSS for (What people are saying, Readu to chingu and the footer) */
