@@ -17,6 +17,7 @@ html,body
 /* body */
 body{
     font-family: "Open Sans", "Helvetica Neue", Raleway, sans-serif;
+    background-color: #080a38;
 }
 
 /*div*/
@@ -43,10 +44,30 @@ div{
 
 #process{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat (4, 1fr);
     grid-template-areas: "apply join build succeed";
-    grid-gap: 0.1em;
+    column-gap: 0;
     padding: 28px 0px 28px 0px;
+}
+
+.seperate{
+    border: 1px solid #d9d9d9;
+    border-radius: 0px;
+    box-shadow: 0 3px 6px #e6e6e6; 
+    height: 300px;
+    padding: 20px;
+    margin: 0 auto;
+    width: 240px;
+}
+
+.seperate:hover{
+    background-color: #DEF0E9;
+    transform: scale(1.1);
+}
+
+.seperate img{
+    height: 200px;
+    width: 227px;
 }
 
 #process h2{
@@ -74,13 +95,15 @@ div{
 
 #overview{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    /*grid-template-columns: 1fr 1fr 1fr;*/
     grid-template-areas: "tier1 tier2 tier3";
+    grid-template-columns: repeat(3, 1fr [col-start]);
+    column-gap: 9px;
     background-color: #F8F8F8;
     padding: 28px 0px 28px 0px;
     margin: 0 auto;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
+    justify-items: stretch;
 }
 
 .pro-overview{
@@ -117,16 +140,16 @@ div{
     padding: 0px 0px 20px 0px; 
     margin: 0 auto;
     max-width: 250px; /*To display text in the middle*/
+    
 }
 /* div - overview ends */
 
 /* div - projects starts */
 .container-projects{
     background-color: #ffffff;
-    text-align: center;
-    padding-top: 1px;
-    width: 100%;
     margin: 0 auto;
+    padding: 30px 40px 80px 40px;
+    width: 100%;
 }
 
 .container-projects h1{
@@ -136,101 +159,186 @@ div{
     color: #7f7f7f; 
     letter-spacing: 2px;
     padding-top: 50px;
+    text-align: center;
 }
 
 #projects{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "tickybot sona-sarovar comment";
+    grid-template-areas: "first second third";
+    column-gap: 0.5rem;
     grid-gap: 0.1em;
-    padding: 28px 0px 28px 0px;
+    padding: 80px 90px 60px 40px;
+    text-align: center;
 }
 
-.container-projects img{
+#projects img{
     width: 300px;
     height: 200px;
 }
 
-#projects h2{
-    font-weight: 400;
-    font-size: 21px;
-    text-align: center;
+#projects .description{
+    border: 1px solid #d9d9d9;
+    border-radius: 0px;
+    box-shadow: 0 3px 6px #e6e6e6; 
     color: #7f7f7f;
-    line-height: 33.6px;
-}
-
-#projects p{
     font-weight: 400;
     font-size: 14px;
-    text-align: center;
-    color: #7f7f7f;
-    line-height: 22.4px;  
+    height: 180px;
+    line-height: 22.4px;
+    text-align: left;
+    width: 280px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+#projects .description h2{
+    font-size: 14px;
+}
+
+#projects .description p{
+    max-width: 250px;
+}
+
+#projects .wrap-tier1{
+    font-size: 11px;
+    text-align: left;
+    padding: 60px 5px 10px 0px;
+}
+
+#projects .wrap-tier2{
+  font-size: 11px;
+  text-align: left;
+  padding: 35px 5px 10px 0px;
+}
+
+#projects .wrap-tier3{
+  font-size: 11px;
+  text-align: left;
+  padding: 15px 5px 10px 0px;
+}
+
+
+.wrap-tier1 #Tier1-box, .wrap-tier2 #Tier2-box, .wrap-tier3 #Tier3-box{
+    color: #15cf89;
+    border: 1px solid #15cf89;
+    background-color: white;
+    font-weight: 600;
+    letter-spacing: 2px;
+    display: inline-block;
+    padding: 5px;
+    margin: 2px;
+}
+
+.wrap-tier1 #box, .wrap-tier2 #box, .wrap-tier3 #box{
+    border: 1px solid #e6e6e6;
+    display: inline-block;
+    padding: 5px;
+    margin: 2px;
 }
 /* div - projects ends */
 /* Nishavijai worked on the above CSS for (chingu process, program overview and past projects) */
-/* Frankie worked on the below CSS for (What people are saying, Ready to chingu and the footer) */
 
-.container-testimonials {
-    background-color: #bbbbbb;
-    margin: 0 auto;
-    text-align: center;
-    width: 100%;
+/* navigation bar */
+nav {
+  background-color: #080a38;
+  position: fixed;
+  width: 100%;
+  padding: 15px;
+  top: 0;
 }
 
-#testimonials {
-    align-items: center;
-    background-color: #F8F8F8;
-    display: grid;
-    grid-template-areas: "testimonials testimonials testimonials";
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: center;
-    margin: 0 auto;
-    padding: 28px 0 28px 0;
+#nav-link {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  margin-left: 10px;
+  letter-spacing: 2px;
 }
 
-.testimonials {
-    margin: 0 1.5rem;
+/* header */
+#header {
+  margin: 150px 30px;
+  text-align: center;
+  color: white;
+  font-size: 21px;
+  letter-spacing: 3px;
 }
 
-.title-testimonials {
-    color: #ffffff;
-    font-weight: 500;
-    font-size: 20px;
-    letter-spacing: 2px;
-    line-height: 31px;
+.space {
+  margin: 15px;
+  line-height: 1.6em;
 }
 
-.testimonial-box {
-    position: relative;
-    height: 175px;
-    width: 320px;
-    background-color: #fff;
-    padding: 25px;
-    display: flex;
-    justify-content: center;
-    box-shadow: 0 3px 6px #e6e6e6;
-    text-align: left;
-    margin: 50px 0 0;    
+@media only screen and (max-width: 576px) {
+  #header {
+    font-size: 14px;
+  }
 }
 
-.testimonial-box .testimonial-text {
-    color: #7f7f7f;
-    font-size: 16px;
-    line-height: 26px;
+/* Apply button in the header */
+#apply-btn {
+  font-size: 20px;
+  width: 200px;
+  height: auto;
+  padding: 15px;
+  border-radius: 15px;
+  border: none;
+  background-color: #15df89;
+  color: white;
+  font-weight: bold;
+  margin: 50px;
 }
 
-.testimonial-user {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;    
-    margin: 2rem -1rem 50px;
+/* Main image in the header */
+#landing-img {
+  display: block;
+  margin: 20px;
 }
 
-.testimonial-user img {
-    border-radius: 100%;
-    margin-right: 10px;
-    object-fit: cover;
-    
+/* Setting background for whole section "What makes Chingu unique" */
+#unique-chingu {
+  background-color: #ffffff;
+  text-align: center;
 }
-/* Frankie worked on the above CSS for (What people are saying, Readu to chingu and the footer) */
+
+/* Header of the section "What makes Chingu unique" */
+.section-header {
+  background-color: #a9a9a9;
+  color: white;
+  letter-spacing: 2px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.6em;
+  text-align: center;
+  padding: 10px auto;
+  font-size: 20px;
+}
+
+.flex-container {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flex-col {
+  font-weight: 400;
+  font-size: 14px;
+  color: #7f7f7f;
+  line-height: 22.4px;
+}
+
+.flex-col h3 {
+  font-weight: 400;
+  font-size: 21px;
+  text-align: center;
+  color: #7f7f7f;
+  line-height: 33.6px;
+  margin: 25px;
+}
+
+.flex-col img{
+  margin: 25px;
+}
+
+
