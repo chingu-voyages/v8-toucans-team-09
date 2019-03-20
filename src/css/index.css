@@ -90,13 +90,14 @@ div{
 
 #overview{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    /*grid-template-columns: 1fr 1fr 1fr;*/
     grid-template-areas: "tier1 tier2 tier3";
+    grid-template-columns: repeat(3, 1fr [col-start]);
     background-color: #F8F8F8;
     padding: 28px 0px 28px 0px;
     margin: 0 auto;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
+    justify-items: stretch;
 }
 
 .pro-overview{
@@ -133,6 +134,7 @@ div{
     padding: 0px 0px 20px 0px; 
     margin: 0 auto;
     max-width: 250px; /*To display text in the middle*/
+    
 }
 /* div - overview ends */
 
