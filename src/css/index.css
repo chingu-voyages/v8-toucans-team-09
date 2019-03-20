@@ -1,26 +1,9 @@
 /* CSS reset rule */
-/* Nishavijai commenting the following to test the divs
 * {
   margin: 0;
   padding: 0;
 } 
-*/
 
-/*Nishavijai commenting the following global styles, since it affects the styles in the follwing divs */
-/* Global Styles */
-/*
-body {
-    font-family: 'Raleway', sans-serif;
-}
-
-h1,
-h2, {
-    text-transform: uppercase;
-}
-*/
-
-/* Nishavijai worked on the following CSS for (chingu process, program overview and past projects) */
-/*html and body GLOBAL to not to have a white space on the corners */
 html,body
 {
     width: 100%;
