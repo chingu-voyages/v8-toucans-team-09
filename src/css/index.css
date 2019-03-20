@@ -341,4 +341,69 @@ nav {
   margin: 25px;
 }
 
+/* Code by Frankie */
+.container-testimonials {
+    background-color: #bbbbbb;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+}
+
+#testimonials {
+    align-items: center;
+    background-color: #F8F8F8;
+    display: grid;
+    grid-template-areas: "testimonials testimonials testimonials";
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 28px 0 28px 0;
+}
+
+.testimonials {
+    margin: 0 1.5rem;
+}
+
+.title-testimonials {
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 31px;
+}
+
+.testimonial-box {    
+    display: flex;
+    background-color: #fff;
+    box-shadow: 0 3px 6px #e6e6e6;
+    height: 175px;
+    justify-content: center;
+    margin: 50px 0 0;
+    padding: 25px;
+    position: relative;
+    text-align: left;
+    width: 320px;        
+}
+
+.testimonial-box .testimonial-text {
+    color: #7f7f7f;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.testimonial-user {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;    
+    margin: 2rem -1rem 50px;
+}
+
+.testimonial-user img {
+    border-radius: 100%;
+    margin-right: 10px;
+    object-fit: cover;
+    
+}
+/* Code above is by Frankie */
 
