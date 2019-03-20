@@ -43,9 +43,9 @@ div{
 
 #process{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat (4, 1fr);
     grid-template-areas: "apply join build succeed";
-    grid-gap: 0.1em;
+    column-gap: 0;
     padding: 28px 0px 28px 0px;
 }
 
@@ -97,6 +97,7 @@ div{
     /*grid-template-columns: 1fr 1fr 1fr;*/
     grid-template-areas: "tier1 tier2 tier3";
     grid-template-columns: repeat(3, 1fr [col-start]);
+    column-gap: 9px;
     background-color: #F8F8F8;
     padding: 28px 0px 28px 0px;
     margin: 0 auto;
@@ -146,7 +147,7 @@ div{
 .container-projects{
     background-color: #ffffff;
     margin: 0 auto;
-    padding-top: 1px;
+    padding: 30px 40px 80px 40px;
     width: 100%;
 }
 
@@ -160,14 +161,14 @@ div{
     text-align: center;
 }
 
-
-
 #projects{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "first second third";
+    column-gap: 0.5rem;
     grid-gap: 0.1em;
-    padding: 28px 0px 28px 0px;
+    padding: 80px 90px 60px 40px;
+    text-align: center;
 }
 
 #projects img{
@@ -185,45 +186,54 @@ div{
     height: 180px;
     line-height: 22.4px;
     text-align: left;
-    width: 300px;
+    width: 280px;
+    padding: 10px;
+    margin: 0 auto;
 }
 
-.wrap{
+#projects .description h2{
+    font-size: 14px;
+}
+
+#projects .description p{
+    max-width: 250px;
+}
+
+#projects .wrap-tier1{
     font-size: 11px;
     text-align: left;
-    padding: 5px;
+    padding: 60px 5px 10px 0px;
 }
 
-.wrap #Tier1-box{
+#projects .wrap-tier2{
+  font-size: 11px;
+  text-align: left;
+  padding: 35px 5px 10px 0px;
+}
+
+#projects .wrap-tier3{
+  font-size: 11px;
+  text-align: left;
+  padding: 15px 5px 10px 0px;
+}
+
+
+.wrap-tier1 #Tier1-box, .wrap-tier2 #Tier2-box, .wrap-tier3 #Tier3-box{
     color: #15cf89;
     border: 1px solid #15cf89;
     background-color: white;
     font-weight: 600;
     letter-spacing: 2px;
     display: inline-block;
+    padding: 5px;
+    margin: 2px;
 }
 
-.wrap #box{
+.wrap-tier1 #box, .wrap-tier2 #box, .wrap-tier3 #box{
     border: 1px solid #e6e6e6;
     display: inline-block;
-}
-
-.wrap #Tier2-box{
-    color: #15cf89;
-    border: 1px solid #15cf89;
-    background-color: white;
-    font-weight: 600;
-    letter-spacing: 2px;
-    display: inline-block;
-}
-
-.wrap #Tier3-box{
-    color: #15cf89;
-    border: 1px solid #15cf89;
-    background-color: white;
-    font-weight: 600;
-    letter-spacing: 2px;
-    display: inline-block;
+    padding: 5px;
+    margin: 2px;
 }
 /* div - projects ends */
 /* Nishavijai worked on the above CSS for (chingu process, program overview and past projects) */
