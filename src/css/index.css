@@ -48,6 +48,26 @@ div{
     padding: 28px 0px 28px 0px;
 }
 
+.seperate{
+    border: 1px solid #d9d9d9;
+    border-radius: 0px;
+    box-shadow: 0 3px 6px #e6e6e6; 
+    height: 300px;
+    padding: 20px;
+    margin: 0 auto;
+    width: 240px;
+}
+
+.seperate:hover{
+    background-color: #DEF0E9;
+    transform: scale(1.1);
+}
+
+.seperate img{
+    height: 200px;
+    width: 227px;
+}
+
 #process h2{
     font-weight: 400;
     font-size: 21px;
@@ -124,10 +144,9 @@ div{
 /* div - projects starts */
 .container-projects{
     background-color: #ffffff;
-    text-align: center;
+    margin: 0 auto;
     padding-top: 1px;
     width: 100%;
-    margin: 0 auto;
 }
 
 .container-projects h1{
@@ -137,35 +156,71 @@ div{
     color: #7f7f7f; 
     letter-spacing: 2px;
     padding-top: 50px;
+    text-align: center;
 }
 
 #projects{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "tickybot sona-sarovar comment";
+    grid-template-areas: "first second third";
     grid-gap: 0.1em;
     padding: 28px 0px 28px 0px;
 }
 
-.container-projects img{
+#projects img{
     width: 300px;
     height: 200px;
 }
 
-#projects h2{
-    font-weight: 400;
-    font-size: 21px;
-    text-align: center;
+#projects .description{
+    border: 1px solid #d9d9d9;
+    border-radius: 0px;
+    box-shadow: 0 3px 6px #e6e6e6; 
     color: #7f7f7f;
-    line-height: 33.6px;
-}
-
-#projects p{
     font-weight: 400;
     font-size: 14px;
-    text-align: center;
-    color: #7f7f7f;
-    line-height: 22.4px;  
+    height: 180px;
+    line-height: 22.4px;
+    text-align: left;
+    width: 300px;
+}
+
+.wrap{
+    font-size: 11px;
+    text-align: left;
+    padding: 5px;
+}
+
+.wrap #Tier1-box{
+    color: #15cf89;
+    border: 1px solid #15cf89;
+    background-color: white;
+    font-weight: 600;
+    letter-spacing: 2px;
+    display: inline-block;
+}
+
+.wrap #box{
+    border: 1px solid #e6e6e6;
+    display: inline-block;
+}
+
+.wrap #Tier2-box{
+    color: #15cf89;
+    border: 1px solid #15cf89;
+    background-color: white;
+    font-weight: 600;
+    letter-spacing: 2px;
+    display: inline-block;
+}
+
+.wrap #Tier3-box{
+    color: #15cf89;
+    border: 1px solid #15cf89;
+    background-color: white;
+    font-weight: 600;
+    letter-spacing: 2px;
+    display: inline-block;
 }
 /* div - projects ends */
 /* Nishavijai worked on the above CSS for (chingu process, program overview and past projects) */
