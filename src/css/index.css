@@ -385,6 +385,27 @@ nav {
     width: 320px;        
 }
 
+.testimonial-box .arrow {
+    border-style: solid;
+    left: 0%;
+    position: absolute;
+}
+
+.bottom {
+    border-color: #ffffff transparent transparent transparent;;
+    border-width: 20px 50px 0px 0px;
+    bottom: -20px;
+}
+
+.bottom::after {
+    border-color: #ffffff transparent transparent transparent;
+    border-style: solid;
+    border-width: 19px 49px 0px 0px;
+    bottom: 1px;
+    content: "";
+    position: absolute;
+}
+
 .testimonial-box .testimonial-text {
     color: #7f7f7f;
     font-size: 16px;
@@ -405,5 +426,5 @@ nav {
     object-fit: cover;
     
 }
-/* Code above is by Frankie */
+/* Code above was written  by Frankie */
 
