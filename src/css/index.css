@@ -1,6 +1,5 @@
 /* CSS reset rule */
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
 } 
@@ -464,6 +463,66 @@ nav {
     margin: 21px auto;
     width: 200px;
 
+}
+
+/* Footer section of webpage  */
+
+#footer {
+    align-items: center;
+    color: #ffffff;
+    background-color: #0F143A;
+    display: grid;
+    grid-template-areas: "contact company social-media";
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 28px 0 28px 0;
+}
+
+#footer ul {
+    list-style: none;
+}
+
+#footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    color: #15DF89;
+}
+
+.contact-title, .company-title {
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 18px;
+    margin-bottom: 30px;
+}
+
+.contact, .company, .social-media {
+    margin: 0 auto;
+}
+
+.contact a {
+    margin-bottom: 10px;
+}
+
+.company li {
+    margin-bottom: 10px;
+}
+
+.social-media {
+    margin-top: 20px;
+}
+
+.social-media a {    
+    display: block;
+    font-size: 28px;
+    line-height: 45px;
+}
+
+.fab:hover {
+    color: #15DF89;
 }
 /* Code above was written  by Frankie */
 
