@@ -1,7 +1,8 @@
 /* CSS reset rule */
 * {
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 } 
 
 html,body
@@ -331,3 +332,130 @@ nav {
 .flex-col img{
   margin: 25px;
 }
+
+/* Code written by Frankie */
+
+/* What are people saying about Chingu section */
+.container-testimonials {
+    background-color: #bbbbbb;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+}
+
+#testimonials {
+    align-items: center;
+    background-color: #F8F8F8;
+    display: grid;
+    grid-template-areas: "testimonials testimonials testimonials";
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 28px 0 28px 0;
+}
+
+.testimonials {
+    margin: 0 1.5rem;
+}
+
+.title-testimonials {
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 31px;
+}
+
+.testimonial-box {    
+    display: flex;
+    background-color: #fff;
+    box-shadow: 0 3px 6px #e6e6e6;
+    height: 175px;
+    justify-content: center;
+    margin: 50px 0 0;
+    padding: 25px;
+    position: relative;
+    text-align: left;
+    width: 320px;        
+}
+
+.testimonial-box .arrow {
+    border-style: solid;
+    left: 0%;
+    position: absolute;
+}
+
+.bottom {
+    border-color: #ffffff transparent transparent transparent;;
+    border-width: 20px 50px 0px 0px;
+    bottom: -20px;
+}
+
+.bottom::after {
+    border-color: #ffffff transparent transparent transparent;
+    border-style: solid;
+    border-width: 19px 49px 0px 0px;
+    bottom: 1px;
+    content: "";
+    position: absolute;
+}
+
+.testimonial-box .testimonial-text {
+    color: #7f7f7f;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.testimonial-user {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;    
+    margin: 2rem -1rem 50px;
+}
+
+.testimonial-user img {
+    border-radius: 100%;
+    margin-right: 10px;
+    object-fit: cover;
+    
+}
+
+/* Ready To Try Chingu section */
+
+.container-cta {
+    background-color: #ffffff;
+    margin: 0 auto;
+    padding: 30px 40px 80px 40px;
+    text-align: center;
+    width: 100%;
+}
+
+.cta {
+    padding: 6em;
+}
+
+.title-cta {
+    color: #7f7f7f;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 64px;
+    padding-top: 50px;
+}
+
+.btn-cta {
+    background-color: #15df89;
+    border: none;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 21px;
+    font-weight: 700;
+    height: auto;
+    line-height: 34px;
+    padding: 10px 21px;
+    margin: 21px auto;
+    width: 200px;
+
+}
+/* Code above was written  by Frankie */
+
