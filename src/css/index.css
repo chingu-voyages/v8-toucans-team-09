@@ -46,17 +46,17 @@ div{
     display: grid;
     grid-template-columns: repeat (4, 1fr);
     grid-template-areas: "apply join build succeed";
-    padding: 90px 50px 150px 50px;
+    padding: 90px 110px 150px 110px;
 }
 
 .seperate{
     border: 1px solid #d9d9d9;
     border-radius: 0px;
-    box-shadow: 0 3px 6px #e6e6e6; 
-    height: 310px;
+    box-shadow: 0 3px 6px #e6e6e6;
+    height: 350px;
     margin: 0 auto;
-    padding: 20px;
-    width: 250px;
+    padding: 20px; 
+    width: 260px;
 }
 
 .seperate:hover{
@@ -177,12 +177,12 @@ div{
     box-shadow: 0 3px 6px #e6e6e6;
     font-size: 14px;
     font-weight: 400;
-    height: 180px;
+    height: 200px;
     line-height: 22.4px;
     text-align: left;
     margin: 0 auto;
     padding: 10px;
-    width: 280px;
+    width: 300px;
 }
 
 #projects .description h2{
@@ -219,7 +219,7 @@ div{
     font-weight: 600;
     letter-spacing: 2px;
     margin: 2px;
-    padding: 5px;   
+    padding: 5px;
 }
 
 .wrap-tier1 #box, .wrap-tier2 #box, .wrap-tier3 #box{
@@ -351,7 +351,8 @@ nav {
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
     margin: 0 auto;
-    padding: 28px 0 28px 0;
+    /*padding: 28px 0 28px 0;*/
+    padding: 120px 130px 100px 130px;
 }
 
 .testimonials {
