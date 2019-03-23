@@ -1,4 +1,4 @@
-/* CSS reset rule */
+/* Global CSS reset rule to remove all default margin and padding values*/
 * {
     margin: 0;
     padding: 0;
