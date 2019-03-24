@@ -29,7 +29,7 @@ div{
 .container-process{
     background-color: #ffffff;
     margin: 0 auto; 
-    padding-top: 70px;
+    padding-top: 90px;
     text-align: center;
     width: 100%;
 }
@@ -44,9 +44,12 @@ div{
 
 #process{
     display: grid;
-    grid-template-columns: repeat (4, 1fr);
-    grid-template-areas: "apply join build succeed";
-    padding: 90px 110px 150px 110px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-areas: "process";
+    justify-content: center;
+    margin: 0 auto;
+    padding: 90px 90px 150px 90px;    
+    width: 100%;
 }
 
 .seperate{
@@ -56,12 +59,12 @@ div{
     height: 350px;
     margin: 0 auto;
     padding: 20px; 
-    width: 260px;
+    width: 270px;
 }
 
 .seperate:hover{
     background-color: #DEF0E9;
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .seperate img{
@@ -82,7 +85,9 @@ div{
     font-size: 14px;
     font-weight: 400;
     line-height: 22.4px; 
+    
     padding: 0px 0px 20px 0px; 
+    text-align: center;
 }
 /* div - process ends */
 
@@ -107,10 +112,11 @@ div{
 #overview{
     background-color: #F8F8F8;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "tier1 tier2 tier3";
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-areas: "overview";
     margin: 0 auto;
     padding: 120px 180px 90px 180px;
+    width: 100%;
 }
 
 #overview img{
@@ -159,15 +165,20 @@ div{
 
 #projects{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "first second third";
-    padding: 90px 150px 40px 60px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-areas: "projects";
+    grid-gap: 2.5rem;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 120px 90px 90px 90px;
     text-align: center;
+    width: 100%;
 }
 
 #projects img{
+    border: 1px solid #d9d9d9;
     height: 200px;
-    width: 300px;
+    width: 90%;
 }
 
 #projects .description{
@@ -182,7 +193,7 @@ div{
     text-align: left;
     margin: 0 auto;
     padding: 10px;
-    width: 300px;
+    width: 90%;
 }
 
 #projects .description h2{
@@ -228,6 +239,7 @@ div{
     margin: 2px;
     padding: 5px;
 }
+
 /* div - projects ends */
 /* Nishavijai worked on the above CSS for (chingu process, program overview and past projects) */
 
