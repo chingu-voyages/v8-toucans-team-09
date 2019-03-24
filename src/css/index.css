@@ -233,24 +233,28 @@ div{
 /* navigation bar */
 nav {
   background-color: #080a38;
-  position: fixed;
+  position: sticky; /* Bugfix nav bar overlap scroll bar issue is fixed by changing position from fixed to sticky */
   width: 100%;
-  padding: 15px;
   top: 0;
+  left:0;
   z-index: 2; /* Bugfix nav bar overlap issue is resolved by placing it above all other elements */
+  padding:15px;
 }
+
 
 #nav-link {
   text-decoration: none;
   color: white;
   font-size: 20px;
-  margin-left: 10px;
   letter-spacing: 2px;
+  margin-left: 10%;
+  margin-top: 10%;
+  overflow-y: scroll;
 }
 
 /* header */
 #header {
-  margin: 150px 30px;
+  margin: 3em 1em;
   text-align: center;
   color: white;
   font-size: 21px;
@@ -258,13 +262,17 @@ nav {
 }
 
 .space {
-  margin: 15px;
+  margin: 1em;
   line-height: 1.6em;
 }
 
 @media only screen and (max-width: 576px) {
   #header {
     font-size: 14px;
+  }
+
+  #landing-img{
+      display:none;
   }
 }
 
@@ -279,13 +287,14 @@ nav {
   background-color: #15df89;
   color: white;
   font-weight: bold;
-  margin: 50px;
+  margin: 30px;
 }
 
 /* Main image in the header */
 #landing-img {
-  display: block;
-  margin: 20px;
+  margin: auto auto;
+  width:85%;
+  height:auto;
 }
 
 /* Setting background for whole section "What makes Chingu unique" */
@@ -318,19 +327,28 @@ nav {
   font-size: 14px;
   color: #7f7f7f;
   line-height: 22.4px;
+  margin:10% auto;
+  margin-bottom:0;
+  text-align: center;
+  width:300px;
 }
 
 .flex-col h3 {
   font-weight: 400;
   font-size: 21px;
-  text-align: center;
   color: #7f7f7f;
   line-height: 33.6px;
-  margin: 25px;
+  margin: 25px auto;
+}
+
+.flex-col p{
+margin-left: 10%;
+margin-right: 10%;
 }
 
 .flex-col img{
-  margin: 25px;
+  margin: 25px auto;
+  text-align:center;
 }
 
 /* Code written by Frankie */
