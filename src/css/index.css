@@ -1,6 +1,5 @@
-/* CSS reset rule */
+/* Global CSS reset rule to remove all default margin and padding values*/
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
 } 
@@ -246,23 +245,28 @@ div{
 /* navigation bar */
 nav {
   background-color: #080a38;
-  position: fixed;
+  position: sticky; /* Bugfix nav bar overlap scroll bar issue is fixed by changing position from fixed to sticky */
   width: 100%;
-  padding: 15px;
   top: 0;
+  left:0;
+  z-index: 2; /* Bugfix nav bar overlap issue is resolved by placing it above all other elements */
+  padding:15px;
 }
+
 
 #nav-link {
   text-decoration: none;
   color: white;
   font-size: 20px;
-  margin-left: 10px;
   letter-spacing: 2px;
+  margin-left: 10%;
+  margin-top: 10%;
+  overflow-y: scroll;
 }
 
 /* header */
 #header {
-  margin: 150px 30px;
+  margin: 3em 1em;
   text-align: center;
   color: white;
   font-size: 21px;
@@ -270,13 +274,17 @@ nav {
 }
 
 .space {
-  margin: 15px;
+  margin: 1em;
   line-height: 1.6em;
 }
 
 @media only screen and (max-width: 576px) {
   #header {
     font-size: 14px;
+  }
+
+  #landing-img{
+      display:none;
   }
 }
 
@@ -291,13 +299,14 @@ nav {
   background-color: #15df89;
   color: white;
   font-weight: bold;
-  margin: 50px;
+  margin: 30px;
 }
 
 /* Main image in the header */
 #landing-img {
-  display: block;
-  margin: 20px;
+  margin: auto auto;
+  width:85%;
+  height:auto;
 }
 
 /* Setting background for whole section "What makes Chingu unique" */
@@ -330,19 +339,28 @@ nav {
   font-size: 14px;
   color: #7f7f7f;
   line-height: 22.4px;
+  margin:10% auto;
+  margin-bottom:0;
+  text-align: center;
+  width:300px;
 }
 
 .flex-col h3 {
   font-weight: 400;
   font-size: 21px;
-  text-align: center;
   color: #7f7f7f;
   line-height: 33.6px;
-  margin: 25px;
+  margin: 25px auto;
+}
+
+.flex-col p{
+margin-left: 10%;
+margin-right: 10%;
 }
 
 .flex-col img{
-  margin: 25px;
+  margin: 25px auto;
+  text-align:center;
 }
 
 /* Code written by Frankie */
@@ -377,6 +395,7 @@ nav {
     font-size: 20px;
     letter-spacing: 2px;
     line-height: 31px;
+    padding: 10px 0 ;
 }
 
 .testimonial-box {    
@@ -396,6 +415,7 @@ nav {
     border-style: solid;
     left: 0%;
     position: absolute;
+    z-index: 1;
 }
 
 .bottom {
@@ -411,6 +431,7 @@ nav {
     bottom: 1px;
     content: "";
     position: absolute;
+    z-index: 1;
 }
 
 .testimonial-box .testimonial-text {
@@ -469,6 +490,66 @@ nav {
     margin: 21px auto;
     width: 200px;
 
+}
+
+/* Footer section of webpage  */
+
+#footer {
+    align-items: center;
+    color: #ffffff;
+    background-color: #0F143A;
+    display: grid;
+    grid-template-areas: "contact company social-media";
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 28px 0 28px 0;
+}
+
+#footer ul {
+    list-style: none;
+}
+
+#footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    color: #15DF89;
+}
+
+.contact-title, .company-title {
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 18px;
+    margin-bottom: 30px;
+}
+
+.contact, .company, .social-media {
+    margin: 0 auto;
+}
+
+.contact a {
+    margin-bottom: 10px;
+}
+
+.company li {
+    margin-bottom: 10px;
+}
+
+.social-media {
+    margin-top: 20px;
+}
+
+.social-media a {    
+    display: block;
+    font-size: 28px;
+    line-height: 45px;
+}
+
+.fab:hover {
+    color: #15DF89;
 }
 /* Code above was written  by Frankie */
 
