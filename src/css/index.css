@@ -528,6 +528,10 @@ nav {
     margin: 0 auto;
 }
 
+.contact {
+    margin-bottom: 4.25rem;
+}
+
 .contact a {
     margin-bottom: 10px;
 }
