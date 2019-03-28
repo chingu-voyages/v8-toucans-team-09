@@ -1,5 +1,6 @@
 /* Global CSS reset rule to remove all default margin and padding values*/
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 } 
@@ -7,9 +8,7 @@
 html,body
 {
     height: 100%;
-    margin: 0px;
-    overflow-x: hidden; 
-    padding: 0px;
+    overflow-x: hidden;
     width: 100%;
 }
 
@@ -19,46 +18,40 @@ body{
     font-family: "Open Sans", "Helvetica Neue", Raleway, sans-serif;
 }
 
-/*div*/
-div{
-    display: block;
-}
-
 /* div - process starts*/
 .container-process{
     background-color: #ffffff;
     margin: 0 auto; 
-    padding-top: 90px;
+    padding-top: 5rem;
     text-align: center;
     width: 100%;
 }
 
 .container-process h1{
     color: #7f7f7f;
-    font-size: 26.6px;
+    font-size: 27px;
     font-weight: 500;
     letter-spacing: 2px;
-    line-height: 42.56px;
+    line-height: 43px;
 }
 
-#process{
+#process{ 
+    align-items: center;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    grid-template-areas: "process";
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     justify-content: center;
-    margin: 0 auto;
-    padding: 90px 90px 150px 90px;    
-    width: 100%;
+    padding: 8rem 6rem;
 }
 
 .seperate{
     border: 1px solid #d9d9d9;
     border-radius: 0px;
     box-shadow: 0 3px 6px #e6e6e6;
-    height: 350px;
+    height: 22rem;
     margin: 0 auto;
-    padding: 20px; 
-    width: 270px;
+    padding: 1rem; 
+    width: 17rem;
 }
 
 .seperate:hover{
@@ -67,25 +60,24 @@ div{
 }
 
 .seperate img{
-    height: 200px;
-    width: 227px;
+    height: 12rem;
+    width: 14rem;
 }
 
 #process h2{
     color: #7f7f7f;
     font-size: 21px;
-    font-weight: 500;
-    line-height: 33.6px;
-    padding: 10px 0px 10px 0px;
+    font-weight: 400;
+    line-height: 34px;
+    padding: 0.5rem 0;
 }
 
 #process p{
     color: #7f7f7f;
     font-size: 14px;
     font-weight: 400;
-    line-height: 22.4px; 
-    
-    padding: 0px 0px 20px 0px; 
+    line-height: 22px;
+    padding: 0 0.5rem; 
     text-align: center;
 }
 /* div - process ends */
@@ -93,6 +85,7 @@ div{
 /* div - overview starts*/
 .container-overview{
     background-color: #BBBBBB;
+    box-shadow: 0 3px 6px grey;
     margin: 0 auto;
     text-align: center;
     width: 100%;
@@ -101,45 +94,55 @@ div{
 .pro-overview{
     background-color: #BBBBBB;
     color: white;
-    font-size: 19.6px;
-    font-weight: 450;
+    font-size: 21px;
+    font-weight: 500;
     letter-spacing: 2px;
-    line-height: 31.36px;
-    padding: 9px 0px 10px 0px; 
+    line-height: 31px;
+    padding: 0.5rem 0; 
 }
 
-#overview{
+#overview{   
+    align-items: center;
     background-color: #F8F8F8;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    grid-template-areas: "overview";
-    margin: 0 auto;
-    padding: 120px 180px 90px 180px;
-    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-gap: 1rem;
+    justify-content: center;
+    padding: 8rem 12rem;
 }
 
 #overview img{
-    height: 200px;
-    width: 200px;
+    height: 13rem;
+    width: 13rem;
 }
 
 #overview h2{
     color: #7f7f7f;
     font-size: 21px;
-    font-weight: 500;
-    line-height: 33.6px;
-    padding: 10px 0px 10px 0px;
+    font-weight: 400;
+    line-height: 34px;
+    padding: 0.5rem 0;
     text-align: center;
+}
+
+#overview span{
+    font-size: 22px;
+    font-weight: 50;
+}
+
+#overview span .three{
+    font-size: 21px;
+    vertical-align: text-bottom;
 }
 
 #overview p{
     color: #7f7f7f;
     font-weight: 400;
     font-size: 14px;
-    line-height: 22.4px;
-    margin: 0 auto; 
+    line-height: 22px;
+    margin: 0 auto;
     max-width: 250px; /*To display text in the middle*/
-    padding: 0px 0px 20px 0px; 
+    padding: 0 0.5rem; 
     text-align: center;
 }
 /* div - overview ends */
@@ -147,37 +150,34 @@ div{
 /* div - projects starts */
 .container-projects{
     background-color: #ffffff;
-    margin: 0 auto;
-    padding: 30px 40px 80px 40px;
+    margin: 0 auto; 
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    text-align: center;
     width: 100%;
 }
 
 .container-projects h1{
     color: #7f7f7f;
+    font-size: 26px;
     font-weight: 500;
-    font-size: 26.6px;
     letter-spacing: 2px;
-    line-height: 42.56px;
-    padding-top: 50px;
-    text-align: center;
+    line-height: 43px;
 }
 
 #projects{
+    align-items: center;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    grid-template-areas: "projects";
-    grid-gap: 2.5rem;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     justify-content: center;
-    margin: 0 auto;
-    padding: 120px 90px 90px 90px;
-    text-align: center;
-    width: 100%;
+    padding: 5rem 7rem;
 }
 
 #projects img{
-    border: 1px solid #d9d9d9;
-    height: 200px;
-    width: 90%;
+    border: 1px solid #e6e6e6;
+    height: 13rem;
+    width: 19rem;
 }
 
 #projects .description{
@@ -187,38 +187,35 @@ div{
     box-shadow: 0 3px 6px #e6e6e6;
     font-size: 14px;
     font-weight: 400;
-    height: 200px;
-    line-height: 22.4px;
+    height: 13rem;
+    line-height: 22px;
     text-align: left;
     margin: 0 auto;
-    padding: 10px;
-    width: 90%;
+    margin-top: -0.1rem;
+    padding: 0.5rem;
+    width: 19rem;
 }
 
 #projects .description h2{
     font-size: 14px;
+    font-weight: 450;
+    padding: 0.2rem;
 }
 
 #projects .description p{
-    max-width: 250px;
+    padding: 0.2rem;
 }
 
 #projects .wrap-tier1{
-    font-size: 11px;
-    padding: 60px 5px 10px 0px;
-    text-align: left;
+    padding-top: 4rem;
 }
 
 #projects .wrap-tier2{
-    font-size: 11px;
-    padding: 35px 5px 10px 0px;
-    text-align: left;
+    padding-top: 2.5rem;
 }
 
 #projects .wrap-tier3{
-    font-size: 11px;
-    padding: 15px 5px 10px 0px;
-    text-align: left;
+    padding-top: 1.2rem;
 }
 
 .wrap-tier1 #Tier1-box, .wrap-tier2 #Tier2-box, .wrap-tier3 #Tier3-box{
@@ -226,8 +223,10 @@ div{
     background-color: white;
     color: #15cf89;
     display: inline-block;
+    font-size: 11px;
     font-weight: 600;
     letter-spacing: 2px;
+    line-height: 18px;
     margin: 2px;
     padding: 5px;
 }
@@ -235,10 +234,12 @@ div{
 .wrap-tier1 #box, .wrap-tier2 #box, .wrap-tier3 #box{
     border: 1px solid #e6e6e6;
     display: inline-block;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 18px;
     margin: 2px;
     padding: 5px;
 }
-
 /* div - projects ends */
 /* Nishavijai worked on the above CSS for (chingu process, program overview and past projects) */
 
