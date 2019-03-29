@@ -247,14 +247,23 @@ body{
     #process{
         display: flex;
         flex-wrap: wrap;
-        grid-gap: 1rem;
-        padding: 3rem 2rem;
+        padding: 3rem 0;
+    }
+
+    #process .seperate{
+        margin: 5px;
+        padding: 5px;
     }
 
     #overview{
         display: flex;
         flex-wrap: wrap;
         padding: 3rem 0;
+    }
+
+    #overview .tier1, #overview .tier2, #overview .tier3{
+        margin: 5px;
+        padding: 5px;
     }
 
     .container-projects{
@@ -264,8 +273,12 @@ body{
     #projects{
         display: flex;
         flex-wrap: wrap;
-        grid-gap: 1.5rem;
         padding: 2rem 0;
+    }
+
+    #projects .first, #projects .second, #projects .third{
+        margin: 5px;
+        padding: 5px;
     }
 }
 /* Nishavijai worked on the above CSS for (chingu process, program overview and past projects) */
