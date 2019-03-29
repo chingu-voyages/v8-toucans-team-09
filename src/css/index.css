@@ -38,10 +38,10 @@ body{
 #process{ 
     align-items: center;
     display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-gap: 0.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     justify-content: center;
-    padding: 8rem 6rem;
+    padding: 6rem;
 }
 
 .seperate{
@@ -85,7 +85,7 @@ body{
 /* div - overview starts*/
 .container-overview{
     background-color: #BBBBBB;
-    box-shadow: 0 3px 6px grey;
+    box-shadow: 5px 10px 8px 10px #e6e6e6;
     margin: 0 auto;
     text-align: center;
     width: 100%;
@@ -105,10 +105,10 @@ body{
     align-items: center;
     background-color: #F8F8F8;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    grid-gap: 3rem;
     justify-content: center;
-    padding: 8rem 12rem;
+    padding: 6rem 0;
 }
 
 #overview img{
@@ -168,10 +168,10 @@ body{
 #projects{
     align-items: center;
     display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-gap: 4rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
     justify-content: center;
-    padding: 5rem 7rem;
+    padding: 4rem 0;
 }
 
 #projects img{
@@ -187,7 +187,7 @@ body{
     box-shadow: 0 3px 6px #e6e6e6;
     font-size: 14px;
     font-weight: 400;
-    height: 13rem;
+    height: 12rem;
     line-height: 22px;
     text-align: left;
     margin: 0 auto;
@@ -203,19 +203,19 @@ body{
 }
 
 #projects .description p{
-    padding: 0.2rem;
+    padding: 0 0.2rem;
 }
 
 #projects .wrap-tier1{
-    padding-top: 4rem;
+    padding-top: 3.2rem;
 }
 
 #projects .wrap-tier2{
-    padding-top: 2.5rem;
+    padding-top: 1.8rem;
 }
 
 #projects .wrap-tier3{
-    padding-top: 1.2rem;
+    padding-top: 0.7rem;
 }
 
 .wrap-tier1 #Tier1-box, .wrap-tier2 #Tier2-box, .wrap-tier3 #Tier3-box{
@@ -241,6 +241,33 @@ body{
     padding: 5px;
 }
 /* div - projects ends */
+
+/*Media queries*/
+@media only screen and (max-width: 1024px){
+    #process{
+        display: flex;
+        flex-wrap: wrap;
+        grid-gap: 1rem;
+        padding: 3rem 2rem;
+    }
+
+    #overview{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 3rem 0;
+    }
+
+    .container-projects{
+        padding-top: 2rem;
+    }
+
+    #projects{
+        display: flex;
+        flex-wrap: wrap;
+        grid-gap: 1.5rem;
+        padding: 2rem 0;
+    }
+}
 /* Nishavijai worked on the above CSS for (chingu process, program overview and past projects) */
 
 /* navigation bar */
