@@ -287,6 +287,40 @@ body{
         padding: 5px;
     }
 }
+
+@media only screen and (max-width: 768px){
+    #process, #overview, #projects{
+        width: 100%;
+    }
+
+    #process h2, #process p, #overview h2, #overview p, #overview span, #overview span .three, #projects .description{
+        font-weight: 500;
+    }
+
+    #overview .tier1, #overview .tier2, #overview .tier3{
+        margin: 20px;
+        padding: 10px;
+    }
+
+    .container-projects{
+        padding-top: 4rem;
+    }
+
+    #projects .first, #projects .second, #projects .third{
+        margin: 20px;
+        padding: 10px;
+    }
+}    
+
+@media only screen and (max-width: 576px){
+    #process, #overview, #projects{
+        width: 100%;
+    }
+
+    #process h2, #process p, #overview h2, #overview p, #overview span, #overview span .three, #projects .description{
+        font-weight: 500;
+    }
+}
 /* Nishavijai worked on the above CSS for (chingu process, program overview and past projects) */
 
 /* navigation bar */
