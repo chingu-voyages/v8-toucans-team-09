@@ -654,21 +654,55 @@ nav {
 
 }
 
-/*Vertical Sliding*/
-
-#intro {
-    margin-left: 37.5%;
-    text-align: center;
+/* loaded styles */
+.loaded #loader-wrapper .loader-section.section-left {
+    -webkit-transform: tanslateX(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: tanslateX(-100%);  /* IE 9 */
+            transform: tanslateX(-100%);
+            
+    -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);  /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  */
+            transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);  /* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+  */
 }
+
+.loaded #loader-wrapper .loader-section.section-right {
+    -webkit-transform: tanslateX(100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: tanslateX(100%);  /* IE 9 */
+            transform: tanslateX(100%);
+            
+    -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);  /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  */
+            transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);  /* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+  */
+}
+
+.loader #loader {
+    opacity: 0;
+    -webkit-transition: all 0.3s ease-out;  /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  */
+            transition: all 0.3s ease-out;  /* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+  */
+}
+
+.loaded #loader-wrapper {
+    visibility: hidden;
+
+    -webkit-transform: tanslateY(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: tanslateY(-100%);  /* IE 9 */
+            transform: tanslateY(-100%);
+
+    -webkit-transition: all 0.3s 1s ease-out;  /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  */
+            transition: all 0.3s 1s ease-out;  /* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+  */
+}
+
+/*Vertical Sliding text*/
+
 .slidingVertical{
 	display: inline;
     text-indent: 8px;
-    font-size: 44px;
+    font-size: 44px;    
     margin-top: 40px;
     text-align: center;
 }
 .slidingVertical span{
-    top: 0; 
+    top: 25%;
+    left: 30%; 
+    text-align: center;
 	animation: topToBottom 12.5s linear infinite 0s;
 	-ms-animation: topToBottom 12.5s linear infinite 0s;
 	-webkit-animation: topToBottom 12.5s linear infinite 0s;
