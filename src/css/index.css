@@ -393,6 +393,14 @@ nav {
 #unique-chingu {
   background-color: #f8f8f8;
   text-align: center;
+  padding-bottom:10%;
+}
+
+hr{
+    height:4px;
+    background-color: #efefef;
+    opacity: 2;
+    border:none;
 }
 
 /* Header of the section "What makes Chingu unique" */
