@@ -452,21 +452,47 @@ nav {
     width: 100%;
 }
 
+/*NishaVijai edited the following part*/
 #testimonials {
+    /*
     align-items: center;
     background-color: #F8F8F8;
     display: grid;
     grid-template-areas: "testimonials testimonials testimonials";
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
-    margin: 0 auto;
-    /*padding: 28px 0 28px 0;*/
-    padding: 120px 130px 100px 130px;
+    margin: 0 auto; */
+    /*padding: 28px 0 28px 0; */
+    /*padding: 120px 130px 100px 130px; */
+
+    align-items: center;
+    background-color: #F8F8F8;
+    display: grid;
+    grid-gap: 2.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    justify-content: center;
+    padding: 4rem 0;
 }
 
+/*
 .testimonials {
     margin: 0 1.5rem;
+}*/
+
+/*Media queries for what people are saying about Chingu*/
+@media only screen and (max-width: 1024px){
+    #testimonials{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 2rem 0;
+    }
+
+    #testimonials .testimonials{
+        margin: 5px;
+        padding: 5px;
+    }
 }
+/*NishaVijai edited the above part*/
 
 .title-testimonials {
     color: #ffffff;
@@ -483,7 +509,7 @@ nav {
     box-shadow: 0 3px 6px #e6e6e6;
     height: 175px;
     justify-content: center;
-    margin: 50px 0 0;
+    margin: 30px 0 0; /*NishaVijai edited this from 50px to 30px*/
     padding: 25px;
     position: relative;
     text-align: left;
@@ -523,7 +549,7 @@ nav {
     align-items: center;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;    
+    flex-wrap: nowrap;
     margin: 2rem -1rem 50px;
 }
 
@@ -532,6 +558,13 @@ nav {
     margin-right: 10px;
     object-fit: cover;
     
+}
+
+#testimonials .testimonials .testimonial-user .user{
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    line-height: 27px;
 }
 
 /* Ready To Try Chingu section */
