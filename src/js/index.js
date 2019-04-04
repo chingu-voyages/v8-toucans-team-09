@@ -7,3 +7,11 @@ function myFunction() {
     x.className = 'dropdown-menu';
   }
 }
+
+// Preloader
+$(document).ready(function() {
+  setTimeout(function() {
+    $('body').addClass('loaded');
+    $('#intro').css('display', 'none');
+  }, 6500);
+});
