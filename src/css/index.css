@@ -84,9 +84,9 @@ body{
 
 /* div - overview starts*/
 .container-overview{
-    background-color: #BBBBBB;
-    box-shadow: 5px 10px 8px 10px #e6e6e6;
+    background-color: #e6e6e6;
     margin: 0 auto;
+    padding-bottom:0.3%;
     text-align: center;
     width: 100%;
 }
@@ -108,7 +108,7 @@ body{
     grid-template-columns: repeat(auto-fit, minmax(200px, auto));
     grid-gap: 3rem;
     justify-content: center;
-    padding: 6rem 0;
+    padding: 6rem 0 8rem 0;
 }
 
 #overview img{
@@ -172,7 +172,7 @@ body{
     grid-gap: 4rem;
     grid-template-columns: repeat(auto-fit, minmax(300px, auto));
     justify-content: center;
-    padding: 4rem 0;
+    padding: 6rem 0;
 }
 
 #projects img{
