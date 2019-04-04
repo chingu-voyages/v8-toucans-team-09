@@ -612,6 +612,11 @@ hr{
 
 }
 
+.btn-cta a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
 /* Footer section of webpage  */
 
 #footer {
