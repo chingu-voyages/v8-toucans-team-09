@@ -900,7 +900,9 @@ hr{
 
     /* Mobile Responsive Call to action */
     
-    
+    .cta {
+        padding: 6em 0;
+    }
 
     /* Mobile Responsive Footer */
 
