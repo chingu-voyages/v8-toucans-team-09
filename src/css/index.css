@@ -844,7 +844,7 @@ hr{
 	-webkit-animation-delay: 2.5s;
 }
 .slidingVertical span:nth-child(3){
-    margin0
+    margin: 0;
 	animation-delay: 5s;
 	-ms-animation-delay: 5s;
 	-webkit-animation-delay: 5s;
@@ -880,13 +880,22 @@ hr{
 	100% { opacity: 0; }
 }
 
-/* Media queries for footer */
+/* Media queries */
 @media only screen and (max-width: 550px) {
     .contact, .company, .social-media {
         display: none;
     }
 
+    /* Preloader */
+    .slidingVertical span {
+        display: inline;
+        top: 20%;
+        left: 5%;
+    }
+
     /* Mobile Responsive Call to action */
+    
+    
 
     /* Mobile Responsive Footer */
 
