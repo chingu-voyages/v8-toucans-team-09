@@ -41,7 +41,7 @@ body{
     grid-gap: 0.5rem;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     justify-content: center;
-    padding: 6rem;
+    padding: 8rem 6rem 9rem 6rem;
 }
 
 .seperate{
@@ -94,7 +94,7 @@ body{
 .pro-overview{
     background-color: #BBBBBB;
     color: white;
-    font-size: 21px;
+    font-size: 20px;
     font-weight: 500;
     letter-spacing: 2px;
     line-height: 31px;
@@ -105,7 +105,7 @@ body{
     align-items: center;
     background-color: #F8F8F8;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(280px, auto));
     grid-gap: 3rem;
     justify-content: center;
     padding: 6rem 0 8rem 0;
@@ -170,7 +170,7 @@ body{
     align-items: center;
     display: grid;
     grid-gap: 4rem;
-    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(320px, auto));
     justify-content: center;
     padding: 6rem 0;
 }
@@ -198,9 +198,10 @@ body{
 }
 
 #projects .description h2{
-    font-size: 14.5px;
-    font-weight: 700;
-    letter-spacing: -0.5px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: -0.9px;
+    line-height: 23px;
     padding: 0.2rem;
 }
 
@@ -264,12 +265,17 @@ body{
     #overview{
         display: flex;
         flex-wrap: wrap;
-        padding: 3rem 0;
+        padding: 7rem 0;
     }
 
     #overview .tier1, #overview .tier2, #overview .tier3{
-        margin: 5px;
-        padding: 5px;
+        margin: 0;
+        padding: 35px;
+    }
+
+    #overview h2, #overview p, #overview span{
+        font-weight: 600;
+        line-height: 1.6;
     }
 
     .container-projects{
@@ -283,8 +289,13 @@ body{
     }
 
     #projects .first, #projects .second, #projects .third{
-        margin: 5px;
-        padding: 5px;
+        margin: 15px;
+        padding: 25px;
+    }
+
+    #projects .description{
+        font-size: 15px;
+        font-weight: 500;
     }
 }
 
@@ -454,38 +465,26 @@ hr{
 
 /* What are people saying about Chingu section */
 .container-testimonials {
-    background-color: #bbbbbb;
+    background-color: #e6e6e6;
     margin: 0 auto;
+    padding-bottom:0.3%;
     text-align: center;
     width: 100%;
 }
 
-/*NishaVijai edited the following part*/
-#testimonials {
-    /*
-    align-items: center;
-    background-color: #F8F8F8;
-    display: grid;
-    grid-template-areas: "testimonials testimonials testimonials";
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: center;
-    margin: 0 auto; */
-    /*padding: 28px 0 28px 0; */
-    /*padding: 120px 130px 100px 130px; */
+.container-testimonials h1{
+    background-color: #BBBBBB;
+}
 
+#testimonials {
     align-items: center;
     background-color: #F8F8F8;
     display: grid;
     grid-gap: 2.5rem;
-    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(320px, auto));
     justify-content: center;
-    padding: 4rem 0;
+    padding: 6rem 0;
 }
-
-/*
-.testimonials {
-    margin: 0 1.5rem;
-}*/
 
 /*Media queries for what people are saying about Chingu*/
 @media only screen and (max-width: 1024px){
@@ -497,10 +496,14 @@ hr{
 
     #testimonials .testimonials{
         margin: 5px;
-        padding: 5px;
+        padding: 20px;
+    }
+
+    #testimonials .testimonials .testimonial-box{
+        font-size: 16px;
+        font-weight: 600;
     }
 }
-/*NishaVijai edited the above part*/
 
 .title-testimonials {
     color: #ffffff;
@@ -517,7 +520,6 @@ hr{
     box-shadow: 0 3px 6px #e6e6e6;
     height: 175px;
     justify-content: center;
-    margin: 30px 0 0; /*NishaVijai edited this from 50px to 30px*/
     padding: 25px;
     position: relative;
     text-align: left;
@@ -550,6 +552,7 @@ hr{
 .testimonial-box .testimonial-text {
     color: #7f7f7f;
     font-size: 16px;
+    font-weight: 500;
     line-height: 26px;
 }
 
@@ -592,7 +595,8 @@ hr{
 .title-cta {
     color: #7f7f7f;
     font-size: 40px;
-    font-weight: 700;
+    font-weight: 800;
+    letter-spacing: 1px;
     line-height: 64px;
     padding-top: 50px;
 }
@@ -620,6 +624,7 @@ hr{
 /* Footer section of webpage  */
 
 #footer {
+    /*
     align-items: center;
     color: #ffffff;
     background-color: #0F143A;
@@ -629,6 +634,16 @@ hr{
     justify-content: center;
     margin: 0 auto;
     padding: 28px 0 28px 0;
+    */
+
+    align-items: center;
+    background-color: #0F143A;
+    color: #ffffff;
+    display: grid;
+    grid-gap: 10rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    justify-content: center;
+    padding: 1rem 0 3rem 2rem;
 }
 
 #footer ul {
