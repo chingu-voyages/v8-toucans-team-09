@@ -631,15 +631,23 @@ hr{
 
 /* Footer section of webpage  */
 
-#footer {
+.footer-content {
     align-items: center;
     background-color: #0F143A;
     color: #ffffff;
     display: grid;
-    grid-gap: 10rem;
-    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    grid-gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "contact company social-media"
+                         ". authors-name .";
     justify-content: center;
-    padding: 1rem 0 3rem 2rem;
+    padding: 0 0 2rem 2rem;
+}
+
+.authors-name {
+    color: white;
+    grid-area: authors-name;
+    padding: 0 0 0 50px;
 }
 
 #footer ul {
@@ -696,9 +704,7 @@ hr{
     color: #15DF89;
 }
 
-.authors {
-left: 50%;
-}
+
 
 .authors .fa-heart {
     color: red;
@@ -905,7 +911,7 @@ left: 50%;
 }
 
 /* Media queries */
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 550px){
     .contact, .company, .social-media {
         display: none;
     }
@@ -925,22 +931,35 @@ left: 50%;
 
     /* Mobile Responsive Footer */
 
+    /*
     #footer {
         display: flex;
         flex-direction: row;
         margin: 0 auto;
     }
+    */
 
+    #footer .footer-content{
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+    }
+
+    /*
     .authors {
         display: none;
+    }*/
+    .authors-name {
+        
+        padding: 20px 0 0 0;
     }
-    
+
     .footer-mobile {
         align-items: center;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin: 0 auto;        
+        margin: 0 auto;     
     }
 
     .mobile-social a {
@@ -1016,4 +1035,128 @@ left: 50%;
 }
 
 /* Code above was written  by Frankie */
+
+@media only screen and (device-width: 768px),
+       only screen and (max-width: 768px){
+        .contact, .company, .social-media {
+            display: none;
+        }
+    
+        /* Preloader */
+        .slidingVertical span {
+            display: inline;
+            top: 20%;
+            left: 5%;
+        }
+    
+        /* Mobile Responsive Call to action */
+        
+        .cta {
+            padding: 6em 0;
+        }
+    
+        /* Mobile Responsive Footer */
+    
+        /*
+        #footer {
+            display: flex;
+            flex-direction: row;
+            margin: 0 auto;
+        }
+        */
+    
+        #footer .footer-content{
+            display: flex;
+            flex-direction: row;
+            margin: 0 auto;
+        }
+    
+        /*
+        .authors {
+            display: none;
+        }*/
+        
+        .authors-name {
+            padding: 20px 0 0 0;
+        }
+
+        .footer-mobile {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0 auto;        
+        }
+    
+        .mobile-social a {
+            align-items: flex-end;
+            color: #ffffff;
+            flex-direction: row;
+            font-size: 28px;
+            font-weight: 400;
+            line-height: 45px;
+            margin: 2rem 0;        
+        }
+    
+        .fab {
+            margin: 0 1rem;
+        }
+    
+        .footer-dropdown {
+            position: relative;
+            width: 300px;
+        }
+    
+        .footer-btn {        
+            background: #0f143a;
+            border: 1px solid #15DF89;
+            color: #15DF89;
+            display: inline-block;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 1.6rem;
+            margin: 0;
+            padding: 7px 11px;
+            width: 100%;        
+        }
+    
+        .footer-btn:hover {
+            background: #15DF89;
+            color: #ffffff;
+        }
+    
+        .dropdown-menu {
+            display: none; 
+        }
+    
+        .dropdown-menu.responsive {                       
+            background-color: #fff;
+            bottom: 40px;
+            border: 1px solid #d3d3d3;
+            color: #000;
+            display: flex;
+            flex-direction: column;
+            font-size: 1.1em;
+            padding: 10px;
+            position: absolute; 
+            width: 300px;
+            z-index: 1;        
+        }
+    
+        #dropdown.dropdown-menu a {
+            color: #000;
+            text-decoration: none;
+        }
+    
+        #dropdown.dropdown-menu a:hover{
+            background: #15DF89;
+            color: #ffffff;
+        }   
+    
+        .dropdown-links {
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 25px;
+        }
+       }
 
