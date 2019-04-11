@@ -18,6 +18,14 @@ body{
     font-family: "Open Sans", "Helvetica Neue", Raleway, sans-serif;
 }
 
+h1{
+    color: #7f7f7f;
+    font-size: 26px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    line-height: 43px;
+}
+
 /* div - process starts*/
 .container-process{
     background-color: #ffffff;
