@@ -632,18 +632,6 @@ hr{
 /* Footer section of webpage  */
 
 #footer {
-    /*
-    align-items: center;
-    color: #ffffff;
-    background-color: #0F143A;
-    display: grid;
-    grid-template-areas: "contact company social-media";
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: center;
-    margin: 0 auto;
-    padding: 28px 0 28px 0;
-    */
-
     align-items: center;
     background-color: #0F143A;
     color: #ffffff;
@@ -706,6 +694,14 @@ hr{
 
 .fab:hover {
     color: #15DF89;
+}
+
+.authors {
+left: 50%;
+}
+
+.authors .fa-heart {
+    color: red;
 }
 /* Styling and Animations for the preloader coded by Frankie */
 #loader-wrapper {
@@ -934,6 +930,11 @@ hr{
         flex-direction: row;
         margin: 0 auto;
     }
+
+    .authors {
+        display: none;
+    }
+    
     .footer-mobile {
         align-items: center;
         display: flex;
