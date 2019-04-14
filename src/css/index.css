@@ -470,7 +470,6 @@ hr{
 }
 
 /* Code written by Frankie */
-
 /* What are people saying about Chingu section */
 .container-testimonials {
     background-color: #e6e6e6;
@@ -492,25 +491,6 @@ hr{
     grid-template-columns: repeat(auto-fit, minmax(320px, auto));
     justify-content: center;
     padding: 6rem 0;
-}
-
-/*Media queries for what people are saying about Chingu*/
-@media only screen and (max-width: 1024px){
-    #testimonials{
-        display: flex;
-        flex-wrap: wrap;
-        padding: 2rem 0;
-    }
-
-    #testimonials .testimonials{
-        margin: 5px;
-        padding: 20px;
-    }
-
-    #testimonials .testimonials .testimonial-box{
-        font-size: 16px;
-        font-weight: 600;
-    }
 }
 
 .title-testimonials {
@@ -912,15 +892,23 @@ hr{
 
 /* Media queries */
 
-@media screen and (max-device-width:320px) {
-    .slidingVertical span {
-        display: inline;
-        top: 10%;
-        left: 10%;
+@media  (max-device-width: 1024px) {
+
+    #testimonials{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 2rem 0;
     }
-}
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px),
-only screen and (max-device-width: 414px){
+
+    #testimonials .testimonials{
+        margin: 5px;
+        padding: 20px;
+    }
+
+    #testimonials .testimonials .testimonial-box{
+        font-size: 16px;
+        font-weight: 600;
+    }
     .contact, .company, .social-media {
         display: none;
     }
@@ -929,7 +917,7 @@ only screen and (max-device-width: 414px){
     .slidingVertical span {
         display: inline;
         top: 30%;
-        left: 15%;
+        left: 25%;
     }
 
     /* Mobile Responsive Call to action */
@@ -1021,5 +1009,21 @@ only screen and (max-device-width: 414px){
         font-size: 15px;
         font-weight: 400;
         line-height: 25px;
+    }
+}
+
+
+@media (max-width:768px) {
+    .slidingVertical span {
+        display: inline;
+        top: 30%;
+        left: 15%;
+    }
+}
+@media (max-width: 690px) {
+    .slidingVertical span {
+        display: inline; 
+        top:8%;
+        left: 1%;
     }
 }
