@@ -977,9 +977,14 @@ hr{
         width: 100%;        
     }
 
-   #dropdown.dropdown-menu a:hover, .footer-btn:hover {
+   #dropdown.dropdown-menu a:hover {
         background: #15DF89;
         color: #ffffff;
+    }
+
+    .footer-btn:hover {
+        background: #15DF89;
+        color: #ffffff; 
     }
 
     .dropdown-menu {
