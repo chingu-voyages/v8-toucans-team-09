@@ -18,23 +18,7 @@ body{
     font-family: "Open Sans", "Helvetica Neue", Raleway, sans-serif;
 }
 
-/* h1{
-    color: #7f7f7f;
-    font-size: 26px;
-    font-weight: 500;
-    letter-spacing: 2px;
-    line-height: 43px;
-}
- */
 /* div - process starts*/
-/*.container-process{
-    background-color: #ffffff;
-    margin: 0 auto; 
-    padding-top: 5rem;
-    text-align: center;
-    width: 100%;
-} */
-
 .container-process, .container-projects{
     background-color: #ffffff;
     margin: 0 auto; 
@@ -43,14 +27,6 @@ body{
     text-align: center;
     width: 100%;
 }
-
-/* .container-process h1{
-    color: #7f7f7f;
-    font-size: 27px;
-    font-weight: 500;
-    letter-spacing: 2px;
-    line-height: 43px;
-} */
 
 .container-process h1, .container-projects h1{
     color: #7f7f7f;
@@ -106,37 +82,9 @@ body{
     padding: 0 0.5rem; 
     text-align: center;
 }
-
 /* div - process ends */
 
-
 /* div - projects starts */
-/*.container-projects{
-    background-color: #ffffff;
-    margin: 0 auto; 
-    padding-top: 5rem;
-    padding-bottom: 3rem;
-    text-align: center;
-    width: 100%;
-}
-
-.container-projects h1{
-    color: #7f7f7f;
-    font-size: 26px;
-    font-weight: 500;
-    letter-spacing: 2px;
-    line-height: 43px;
-}*/
-
-/* #projects{
-    align-items: center;
-    display: grid;
-    grid-gap: 4rem;
-    grid-template-columns: repeat(auto-fit, minmax(320px, auto));
-    justify-content: center;
-    padding: 6rem 0;
-} */
-
 #projects{
     grid-gap: 4rem;
     grid-template-columns: repeat(auto-fit, minmax(320px, auto));
@@ -217,16 +165,7 @@ body{
 }
 /* div - projects ends */
 
-
 /* div - overview starts*/
-/* .container-overview{
-    background-color: #e6e6e6;
-    margin: 0 auto;
-    padding-bottom:0.3%;
-    text-align: center;
-    width: 100%;
-}
- */
 .container-overview, .container-testimonials {
     background-color: #e6e6e6;
     margin: 0 auto;
@@ -245,16 +184,6 @@ body{
     padding: 0.5rem 0; 
 }
 
-/* #overview, #testimonials{   
-    align-items: center;
-    background-color: #F8F8F8;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, auto));
-    grid-gap: 3rem;
-    justify-content: center;
-    padding: 6rem 0 8rem 0;
-} */
-
 #overview, #testimonials{
     background-color: #F8F8F8;
     grid-template-columns: repeat(auto-fit, minmax(280px, auto));
@@ -262,30 +191,10 @@ body{
     padding: 6rem 0 8rem 0;
 }
 
-/* #testimonials {
-    align-items: center;
-    background-color: #F8F8F8;
-    display: grid;
-    grid-gap: 2.5rem;
-    grid-template-columns: repeat(auto-fit, minmax(320px, auto));
-    justify-content: center;
-    padding: 6rem 0;
-} */
-
-
 #overview img{
     height: 13rem;
     width: 13rem;
 }
-
-/* #overview h2{
-    color: #7f7f7f;
-    font-size: 21px;
-    font-weight: 400;
-    line-height: 34px;
-    padding: 0.5rem 0;
-    text-align: center;
-} */
 
 #overview span{
     font-size: 21px;
@@ -297,17 +206,6 @@ body{
     font-weight: 400;
     vertical-align: text-bottom;
 }
-
-/* #overview p{
-    color: #7f7f7f;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 22px;
-    margin: 0 auto;
-    max-width: 270px; /*To display text in the middle*/
-    /*padding: 0 0.5rem; 
-    text-align: center;
-} */
 
 #overview p{
     margin: 0 auto;
