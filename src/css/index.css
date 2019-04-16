@@ -18,7 +18,41 @@ body{
     font-family: "Open Sans", "Helvetica Neue", Raleway, sans-serif;
 }
 
-h1{
+/* h1{
+    color: #7f7f7f;
+    font-size: 26px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    line-height: 43px;
+}
+ */
+/* div - process starts*/
+/*.container-process{
+    background-color: #ffffff;
+    margin: 0 auto; 
+    padding-top: 5rem;
+    text-align: center;
+    width: 100%;
+} */
+
+.container-process, .container-projects{
+    background-color: #ffffff;
+    margin: 0 auto; 
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    text-align: center;
+    width: 100%;
+}
+
+/* .container-process h1{
+    color: #7f7f7f;
+    font-size: 27px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    line-height: 43px;
+} */
+
+.container-process h1, .container-projects h1{
     color: #7f7f7f;
     font-size: 26px;
     font-weight: 500;
@@ -26,24 +60,7 @@ h1{
     line-height: 43px;
 }
 
-/* div - process starts*/
-.container-process{
-    background-color: #ffffff;
-    margin: 0 auto; 
-    padding-top: 5rem;
-    text-align: center;
-    width: 100%;
-}
-
-.container-process h1{
-    color: #7f7f7f;
-    font-size: 27px;
-    font-weight: 500;
-    letter-spacing: 2px;
-    line-height: 43px;
-}
-
-#process{ 
+#process, #projects, #overview, #testimonials{ 
     align-items: center;
     display: grid;
     grid-gap: 0.5rem;
@@ -72,15 +89,16 @@ h1{
     width: 14rem;
 }
 
-#process h2{
+#process h2, #overview h2, .flex-col h2{
     color: #7f7f7f;
     font-size: 21px;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 34px;
     padding: 0.5rem 0;
+    text-align: center;
 }
 
-#process p{
+#process p, #overview p, .flex-col{
     color: #7f7f7f;
     font-size: 14px;
     font-weight: 400;
@@ -88,76 +106,12 @@ h1{
     padding: 0 0.5rem; 
     text-align: center;
 }
+
 /* div - process ends */
 
-/* div - overview starts*/
-.container-overview{
-    background-color: #e6e6e6;
-    margin: 0 auto;
-    padding-bottom:0.3%;
-    text-align: center;
-    width: 100%;
-}
-
-.pro-overview{
-    background-color: #BBBBBB;
-    color: white;
-    font-size: 20px;
-    font-weight: 500;
-    letter-spacing: 2px;
-    line-height: 31px;
-    padding: 0.5rem 0; 
-}
-
-#overview{   
-    align-items: center;
-    background-color: #F8F8F8;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, auto));
-    grid-gap: 3rem;
-    justify-content: center;
-    padding: 6rem 0 8rem 0;
-}
-
-#overview img{
-    height: 13rem;
-    width: 13rem;
-}
-
-#overview h2{
-    color: #7f7f7f;
-    font-size: 21px;
-    font-weight: 400;
-    line-height: 34px;
-    padding: 0.5rem 0;
-    text-align: center;
-}
-
-#overview span{
-    font-size: 21px;
-    font-weight: 400;
-}
-
-#overview span .three{
-    font-size: 21px;
-    font-weight: 400;
-    vertical-align: text-bottom;
-}
-
-#overview p{
-    color: #7f7f7f;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 22px;
-    margin: 0 auto;
-    max-width: 270px; /*To display text in the middle*/
-    padding: 0 0.5rem; 
-    text-align: center;
-}
-/* div - overview ends */
 
 /* div - projects starts */
-.container-projects{
+/*.container-projects{
     background-color: #ffffff;
     margin: 0 auto; 
     padding-top: 5rem;
@@ -172,14 +126,20 @@ h1{
     font-weight: 500;
     letter-spacing: 2px;
     line-height: 43px;
-}
+}*/
 
-#projects{
+/* #projects{
     align-items: center;
     display: grid;
     grid-gap: 4rem;
     grid-template-columns: repeat(auto-fit, minmax(320px, auto));
     justify-content: center;
+    padding: 6rem 0;
+} */
+
+#projects{
+    grid-gap: 4rem;
+    grid-template-columns: repeat(auto-fit, minmax(320px, auto));
     padding: 6rem 0;
 }
 
@@ -256,6 +216,104 @@ h1{
     padding: 5px;
 }
 /* div - projects ends */
+
+
+/* div - overview starts*/
+/* .container-overview{
+    background-color: #e6e6e6;
+    margin: 0 auto;
+    padding-bottom:0.3%;
+    text-align: center;
+    width: 100%;
+}
+ */
+.container-overview, .container-testimonials {
+    background-color: #e6e6e6;
+    margin: 0 auto;
+    padding-bottom:0.3%;
+    text-align: center;
+    width: 100%;
+}
+
+.pro-overview, .title-testimonials, .container-testimonials h1, .section-header{
+    background-color: #BBBBBB;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    line-height: 31px;
+    padding: 0.5rem 0; 
+}
+
+/* #overview, #testimonials{   
+    align-items: center;
+    background-color: #F8F8F8;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+    grid-gap: 3rem;
+    justify-content: center;
+    padding: 6rem 0 8rem 0;
+} */
+
+#overview, #testimonials{
+    background-color: #F8F8F8;
+    grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+    grid-gap: 3rem;
+    padding: 6rem 0 8rem 0;
+}
+
+/* #testimonials {
+    align-items: center;
+    background-color: #F8F8F8;
+    display: grid;
+    grid-gap: 2.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(320px, auto));
+    justify-content: center;
+    padding: 6rem 0;
+} */
+
+
+#overview img{
+    height: 13rem;
+    width: 13rem;
+}
+
+/* #overview h2{
+    color: #7f7f7f;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 34px;
+    padding: 0.5rem 0;
+    text-align: center;
+} */
+
+#overview span{
+    font-size: 21px;
+    font-weight: 400;
+}
+
+#overview span .three{
+    font-size: 21px;
+    font-weight: 400;
+    vertical-align: text-bottom;
+}
+
+/* #overview p{
+    color: #7f7f7f;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    margin: 0 auto;
+    max-width: 270px; /*To display text in the middle*/
+    /*padding: 0 0.5rem; 
+    text-align: center;
+} */
+
+#overview p{
+    margin: 0 auto;
+    max-width: 270px; /*To display text in the middle*/ 
+}
+/* div - overview ends */
 
 /*Media queries*/
 @media only screen and (max-width: 1024px){
@@ -423,7 +481,7 @@ hr{
 }
 
 /* Header of the section "What makes Chingu unique" */
-.section-header {
+/* .section-header {
   background-color: #a9a9a9;
   color: white;
   font-size: 21px;
@@ -432,7 +490,7 @@ hr{
   line-height: 2.5em;
   padding: 0.5em auto;
   text-align: center; 
-}
+} */
 
 .flex-container {
   display: inline-flex;
@@ -440,6 +498,7 @@ hr{
   justify-content: center;
 }
 
+/*
 .flex-col {
   color: #7f7f7f;
   font-size: 14px;
@@ -449,15 +508,21 @@ hr{
   margin-bottom: 0;
   text-align: center;
   width: 300px;
+}*/
+
+.flex-col {
+    margin: 10% auto;
+    margin-bottom: 0;
+    width: 300px;
 }
 
-.flex-col h3 {
+/* .flex-col h3 {
   color: #7f7f7f;
   font-size: 21px;
   font-weight: 400;
   line-height: 33.6px;
   margin: 25px auto;
-}
+}*/
 
 .flex-col p {
   margin-left: 10%;
@@ -472,7 +537,7 @@ hr{
 /* Code written by Frankie */
 
 /* What are people saying about Chingu section */
-.container-testimonials {
+/* .container-testimonials {
     background-color: #e6e6e6;
     margin: 0 auto;
     padding-bottom:0.3%;
@@ -492,8 +557,12 @@ hr{
     grid-template-columns: repeat(auto-fit, minmax(320px, auto));
     justify-content: center;
     padding: 6rem 0;
-}
+} */
 
+/* .container-testimonials h1{
+    background-color: #BBBBBB;
+}
+ */
 /*Media queries for what people are saying about Chingu*/
 @media only screen and (max-width: 1024px){
     #testimonials{
@@ -513,14 +582,14 @@ hr{
     }
 }
 
-.title-testimonials {
+/* .title-testimonials {
     color: #ffffff;
     font-weight: 500;
     font-size: 20px;
     letter-spacing: 2px;
     line-height: 31px;
     padding: 10px 0 ;
-}
+} */
 
 .testimonial-box {    
     display: flex;
@@ -911,7 +980,9 @@ hr{
 }
 
 /* Media queries */
-@media only screen and (max-width: 550px){
+@media only screen and (max-width: 550px),
+       only screen and (device-width: 768px),
+       only screen and (max-width: 768px){
     .contact, .company, .social-media {
         display: none;
     }
@@ -1035,128 +1106,3 @@ hr{
 }
 
 /* Code above was written  by Frankie */
-
-@media only screen and (device-width: 768px),
-       only screen and (max-width: 768px){
-        .contact, .company, .social-media {
-            display: none;
-        }
-    
-        /* Preloader */
-        .slidingVertical span {
-            display: inline;
-            top: 20%;
-            left: 5%;
-        }
-    
-        /* Mobile Responsive Call to action */
-        
-        .cta {
-            padding: 6em 0;
-        }
-    
-        /* Mobile Responsive Footer */
-    
-        /*
-        #footer {
-            display: flex;
-            flex-direction: row;
-            margin: 0 auto;
-        }
-        */
-    
-        #footer .footer-content{
-            display: flex;
-            flex-direction: row;
-            margin: 0 auto;
-        }
-    
-        /*
-        .authors {
-            display: none;
-        }*/
-        
-        .authors-name {
-            padding: 20px 0 0 0;
-        }
-
-        .footer-mobile {
-            align-items: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            margin: 0 auto;        
-        }
-    
-        .mobile-social a {
-            align-items: flex-end;
-            color: #ffffff;
-            flex-direction: row;
-            font-size: 28px;
-            font-weight: 400;
-            line-height: 45px;
-            margin: 2rem 0;        
-        }
-    
-        .fab {
-            margin: 0 1rem;
-        }
-    
-        .footer-dropdown {
-            position: relative;
-            width: 300px;
-        }
-    
-        .footer-btn {        
-            background: #0f143a;
-            border: 1px solid #15DF89;
-            color: #15DF89;
-            display: inline-block;
-            font-size: 24px;
-            font-weight: 700;
-            line-height: 1.6rem;
-            margin: 0;
-            padding: 7px 11px;
-            width: 100%;        
-        }
-    
-        .footer-btn:hover {
-            background: #15DF89;
-            color: #ffffff;
-        }
-    
-        .dropdown-menu {
-            display: none; 
-        }
-    
-        .dropdown-menu.responsive {                       
-            background-color: #fff;
-            bottom: 40px;
-            border: 1px solid #d3d3d3;
-            color: #000;
-            display: flex;
-            flex-direction: column;
-            font-size: 1.1em;
-            padding: 10px;
-            position: absolute; 
-            width: 300px;
-            z-index: 1;        
-        }
-    
-        #dropdown.dropdown-menu a {
-            color: #000;
-            text-decoration: none;
-        }
-    
-        #dropdown.dropdown-menu a:hover{
-            background: #15DF89;
-            color: #ffffff;
-        }   
-    
-        .dropdown-links {
-            font-size: 15px;
-            font-weight: 400;
-            line-height: 25px;
-        }
-       }
-
