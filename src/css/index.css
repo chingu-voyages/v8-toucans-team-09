@@ -64,18 +64,6 @@ nav {
   .space strong{
     font-size:2em;
 }
-
-/*media query for the header - images is hidden, font size is smaller*/
-
-  @media only screen and (max-width: 576px) {
-    #header {
-      font-size: 14px;
-    }
-  
-    #landing-img {
-      display: none;
-    }
-  }
   
   /* Apply button in the header */
   #apply-btn {
@@ -393,89 +381,7 @@ nav {
 }
 /* div - projects ends */
 
-/*Media queries*/
-@media only screen and (max-width: 1024px){
-    #process{
-        display: flex;
-        flex-wrap: wrap;
-        padding: 3rem 0;
-    }
 
-    #process .seperate{
-        margin: 15px;
-        padding: 10px;
-    }
-
-    #overview{
-        display: flex;
-        flex-wrap: wrap;
-        padding: 7rem 0;
-    }
-
-    #overview .tier1, #overview .tier2, #overview .tier3{
-        margin: 0;
-        padding: 35px;
-    }
-
-    #overview h2, #overview p, #overview span{
-        font-weight: 600;
-        line-height: 1.6;
-    }
-
-    .container-projects{
-        padding-top: 2rem;
-    }
-
-    #projects{
-        display: flex;
-        flex-wrap: wrap;
-        padding: 2rem 0;
-    }
-
-    #projects .first, #projects .second, #projects .third{
-        margin: 15px;
-        padding: 25px;
-    }
-
-    #projects .description{
-        font-size: 15px;
-        font-weight: 500;
-    }
-}
-
-@media only screen and (max-width: 768px){
-    #process, #overview, #projects{
-        width: 100%;
-    }
-
-    #process h2, #process p, #overview h2, #overview p, #overview span, #overview span .three, #projects .description{
-        font-weight: 500;
-    }
-
-    #overview .tier1, #overview .tier2, #overview .tier3{
-        margin: 20px;
-        padding: 10px;
-    }
-
-    .container-projects{
-        padding-top: 4rem;
-    }
-
-    #projects .first, #projects .second, #projects .third{
-        margin: 20px;
-        padding: 10px;
-    }
-}    
-
-@media only screen and (max-width: 576px){
-    #process, #overview, #projects{
-        width: 100%;
-    }
-
-    #process h2, #process p, #overview h2, #overview p, #overview span, #overview span .three, #projects .description{
-        font-weight: 500;
-    }
-}
 /* Nishavijai worked on the above CSS for (chingu process, program overview and past projects) */
 
 /* Code written by Frankie */
@@ -901,7 +807,61 @@ nav {
 
 /* Media queries */
 
-@media  (max-device-width: 1024px) {
+@media only screen and (max-width: 1024px) {
+
+    /* Preloader */
+    .slidingVertical span {
+        display: inline;
+        top: 30%;
+        left: 25%;
+    }
+
+    #process{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 3rem 0;
+    }
+
+    #process .seperate{
+        margin: 15px;
+        padding: 10px;
+    }
+
+    #overview{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 7rem 0;
+    }
+
+    #overview .tier1, #overview .tier2, #overview .tier3{
+        margin: 0;
+        padding: 35px;
+    }
+
+    #overview h2, #overview p, #overview span{
+        font-weight: 600;
+        line-height: 1.6;
+    }
+
+    .container-projects{
+        padding-top: 2rem;
+    }
+
+    #projects{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 2rem 0;
+    }
+
+    #projects .first, #projects .second, #projects .third{
+        margin: 15px;
+        padding: 25px;
+    }
+
+    #projects .description{
+        font-size: 15px;
+        font-weight: 500;
+    }
 
     #testimonials{
         display: flex;
@@ -920,13 +880,6 @@ nav {
     }
     .contact, .company, .social-media {
         display: none;
-    }
-
-    /* Preloader */
-    .slidingVertical span {
-        display: inline;
-        top: 30%;
-        left: 25%;
     }
 
     /* Mobile Responsive Call to action */
@@ -986,15 +939,15 @@ nav {
         width: 100%;        
     }
 
-   #dropdown.dropdown-menu a:hover {
+   #dropdown.dropdown-menu a:hover, .footer-btn:hover {
         background: #15DF89;
         color: #ffffff;
     }
 
-    .footer-btn:hover {
+    /* .footer-btn:hover {
         background: #15DF89;
         color: #ffffff; 
-    }
+    } */
 
     .dropdown-menu {
         display: none; 
@@ -1026,18 +979,56 @@ nav {
     }
 }
 
-
-@media (max-width:768px) {
+@media only screen and (max-width:768px) {
     .slidingVertical span {
         display: inline;
         top: 30%;
         left: 15%;
     }
+
+    #process, #overview, #projects{
+        width: 100%;
+    }
+
+    #process h2, #process p, #overview h2, #overview p, #overview span, #overview span .three, #projects .description{
+        font-weight: 500;
+    }
+
+    #overview .tier1, #overview .tier2, #overview .tier3{
+        margin: 20px;
+        padding: 10px;
+    }
+
+    .container-projects{
+        padding-top: 4rem;
+    }
+
+    #projects .first, #projects .second, #projects .third{
+        margin: 20px;
+        padding: 10px;
+    }
 }
-@media (max-width: 690px) {
+
+@media only screen and (max-width: 576px) {
     .slidingVertical span {
         display: inline; 
         top:8%;
         left: 1%;
+    }
+
+    #header {
+      font-size: 14px;
+    }
+  
+    #landing-img {
+      display: none;
+    }
+
+    #process, #overview, #projects{
+        width: 100%;
+    }
+
+    #process h2, #process p, #overview h2, #overview p, #overview span, #overview span .three, #projects .description{
+        font-weight: 500;
     }
 }
