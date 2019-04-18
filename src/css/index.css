@@ -18,14 +18,142 @@ body{
     font-family: "Open Sans", "Helvetica Neue", Raleway, sans-serif;
 }
 
-h1{
-    color: #7f7f7f;
-    font-size: 26px;
-    font-weight: 500;
+/* navigation bar */
+nav {
+    background-color: #080a38;
+    left: 0;
+    top: 0;
+    padding: 15px;
+    position: sticky; /* Bugfix nav bar overlap scroll bar issue is fixed by changing position from fixed to sticky */
+    width: 100%;
+    z-index: 2; /* Bugfix nav bar overlap issue is resolved by placing it above all other elements */
+  }
+  
+  #nav-link {
+    color: white;
+    font-size: 20px;
     letter-spacing: 2px;
-    line-height: 43px;
+    margin-left: 10%;
+    margin-top: 10%;
+    overflow-y: scroll;
+    text-decoration: none;
+  }
+  
+  /* header */
+  #header {
+    color: white;
+    font-size: 21px;
+    letter-spacing: 3px;
+    margin: 3em 1em;
+    text-align: center;
+  }
+  
+  .space {
+    line-height: 1.6em;
+    margin: 1em;
+  }
+
+  .space strong{
+    font-size:2em;
 }
 
+/*media query for the header - images is hidden, font size is smaller*/
+
+  @media only screen and (max-width: 576px) {
+    #header {
+      font-size: 14px;
+    }
+  
+    #landing-img {
+      display: none;
+    }
+  }
+  
+  /* Apply button in the header */
+  #apply-btn {
+    background-color: #15df89;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    height: auto;
+    margin: 30px;
+    padding: 15px;
+    width: 200px;
+  }
+  
+  /* Main image in the header */
+  #landing-img {
+    height: auto;
+    margin: auto auto;
+    width: 85%;
+  }
+  
+  /* Setting background for whole section "What makes Chingu unique" */
+  #unique-chingu {
+    background-color: #f8f8f8;
+    text-align: center;
+    padding-bottom:10%;
+  }
+  
+  hr{
+      height:4px;
+      background-color: #efefef;
+      opacity: 2;
+      border:none;
+  }
+  
+  /* Header of the section "What makes Chingu unique" */
+  .section-header {
+    background-color: #a9a9a9;
+    color: white;
+    font-size: 21px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    line-height: 2.5em;
+    padding: 0.5em auto;
+    text-align: center; 
+  }
+  
+  .flex-container {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .flex-col {
+    color: #7f7f7f;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22.4px;
+    margin: 10% auto;
+    margin-bottom: 0;
+    text-align: center;
+    width: 300px;
+  }
+  
+  .flex-col h3 {
+    color: #7f7f7f;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 33.6px;
+    margin: 25px auto;
+  }
+  
+  .flex-col p {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  
+  .flex-col img {
+    margin: 25px auto;
+    text-align: center;
+  }
+
+/* END of Kinga's sections*/
+
+/* START of Nisha's sections*/
 /* div - process starts*/
 .container-process{
     background-color: #ffffff;
@@ -341,133 +469,6 @@ h1{
     }
 }
 /* Nishavijai worked on the above CSS for (chingu process, program overview and past projects) */
-
-/* navigation bar */
-nav {
-  background-color: #080a38;
-  left: 0;
-  top: 0;
-  padding: 15px;
-  position: sticky; /* Bugfix nav bar overlap scroll bar issue is fixed by changing position from fixed to sticky */
-  width: 100%;
-  z-index: 2; /* Bugfix nav bar overlap issue is resolved by placing it above all other elements */
-}
-
-#nav-link {
-  color: white;
-  font-size: 20px;
-  letter-spacing: 2px;
-  margin-left: 10%;
-  margin-top: 10%;
-  overflow-y: scroll;
-  text-decoration: none;
-}
-
-/* header */
-#header {
-  color: white;
-  font-size: 21px;
-  letter-spacing: 3px;
-  margin: 3em 1em;
-  text-align: center;
-}
-
-.space {
-  line-height: 1.6em;
-  margin: 1em;
-}
-
-@media only screen and (max-width: 576px) {
-  #header {
-    font-size: 14px;
-  }
-
-  #landing-img {
-    display: none;
-  }
-}
-
-/* Apply button in the header */
-#apply-btn {
-  background-color: #15df89;
-  border: none;
-  border-radius: 15px;
-  color: white;
-  font-size: 20px;
-  font-weight: bold;
-  height: auto;
-  margin: 30px;
-  padding: 15px;
-  width: 200px;
-}
-
-/* Main image in the header */
-#landing-img {
-  height: auto;
-  margin: auto auto;
-  width: 85%;
-}
-
-/* Setting background for whole section "What makes Chingu unique" */
-#unique-chingu {
-  background-color: #f8f8f8;
-  text-align: center;
-  padding-bottom:10%;
-}
-
-hr{
-    height:4px;
-    background-color: #efefef;
-    opacity: 2;
-    border:none;
-}
-
-/* Header of the section "What makes Chingu unique" */
-.section-header {
-  background-color: #a9a9a9;
-  color: white;
-  font-size: 21px;
-  font-weight: 500;
-  letter-spacing: 2px;
-  line-height: 2.5em;
-  padding: 0.5em auto;
-  text-align: center; 
-}
-
-.flex-container {
-  display: inline-flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.flex-col {
-  color: #7f7f7f;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 22.4px;
-  margin: 10% auto;
-  margin-bottom: 0;
-  text-align: center;
-  width: 300px;
-}
-
-.flex-col h3 {
-  color: #7f7f7f;
-  font-size: 21px;
-  font-weight: 400;
-  line-height: 33.6px;
-  margin: 25px auto;
-}
-
-.flex-col p {
-  margin-left: 10%;
-  margin-right: 10%;
-}
-
-.flex-col img {
-  margin: 25px auto;
-  text-align: center;
-}
 
 /* Code written by Frankie */
 /* What are people saying about Chingu section */
