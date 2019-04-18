@@ -434,27 +434,6 @@ hr{
 
 /* Code written by Frankie */
 /* What are people saying about Chingu section */
-/* .container-testimonials {
-    background-color: #e6e6e6;
-    margin: 0 auto;
-    padding-bottom:0.3%;
-    text-align: center;
-    width: 100%;
-}
-
-.container-testimonials h1{
-    background-color: #BBBBBB;
-}
-
-#testimonials {
-    align-items: center;
-    background-color: #F8F8F8;
-    display: grid;
-    grid-gap: 2.5rem;
-    grid-template-columns: repeat(auto-fit, minmax(320px, auto));
-    justify-content: center;
-    padding: 6rem 0;
-} */
 
 .title-testimonials {
     color: #ffffff;
