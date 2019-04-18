@@ -13,5 +13,5 @@ $(document).ready(function() {
   setTimeout(function() {
     $('body').addClass('loaded');
     $('#pre-loader').fadeOut(2000);
-  }, 6000);
+  }, 5500);
 });

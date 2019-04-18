@@ -433,7 +433,6 @@ hr{
 }
 
 /* Code written by Frankie */
-
 /* What are people saying about Chingu section */
 /* .container-testimonials {
     background-color: #e6e6e6;
@@ -457,30 +456,7 @@ hr{
     padding: 6rem 0;
 } */
 
-/* .container-testimonials h1{
-    background-color: #BBBBBB;
-}
- */
-/*Media queries for what people are saying about Chingu*/
-@media only screen and (max-width: 1024px){
-    #testimonials{
-        display: flex;
-        flex-wrap: wrap;
-        padding: 2rem 0;
-    }
-
-    #testimonials .testimonials{
-        margin: 5px;
-        padding: 20px;
-    }
-
-    #testimonials .testimonials .testimonial-box{
-        font-size: 16px;
-        font-weight: 600;
-    }
-}
-
-/* .title-testimonials {
+.title-testimonials {
     color: #ffffff;
     font-weight: 500;
     font-size: 20px;
@@ -676,7 +652,7 @@ hr{
 .authors .fa-heart {
     color: red;
 }
-/* Styling and Animations for the preloader coded by Frankie */
+/* Styling and Animations for the preloader coded by Frankie (PLEASE DO NOT TRY TO REFACTOR SHOULD BE LEFT AS IS) */
 #loader-wrapper {
     position: fixed;
     top: 0;
@@ -878,9 +854,24 @@ hr{
 }
 
 /* Media queries */
-@media only screen and (max-width: 550px),
-       only screen and (device-width: 768px),
-       only screen and (max-width: 768px){
+
+@media  (max-device-width: 1024px) {
+
+    #testimonials{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 2rem 0;
+    }
+
+    #testimonials .testimonials{
+        margin: 5px;
+        padding: 20px;
+    }
+
+    #testimonials .testimonials .testimonial-box{
+        font-size: 16px;
+        font-weight: 600;
+    }
     .contact, .company, .social-media {
         display: none;
     }
@@ -888,8 +879,8 @@ hr{
     /* Preloader */
     .slidingVertical span {
         display: inline;
-        top: 20%;
-        left: 5%;
+        top: 30%;
+        left: 25%;
     }
 
     /* Mobile Responsive Call to action */
@@ -898,26 +889,12 @@ hr{
         padding: 6em 0;
     }
 
-    /* Mobile Responsive Footer */
-
-    /*
-    #footer {
-        display: flex;
-        flex-direction: row;
-        margin: 0 auto;
-    }
-    */
-
     #footer .footer-content{
         display: flex;
         flex-direction: row;
         margin: 0 auto;
     }
 
-    /*
-    .authors {
-        display: none;
-    }*/
     .authors-name {
         
         padding: 20px 0 0 0;
@@ -963,9 +940,14 @@ hr{
         width: 100%;        
     }
 
-    .footer-btn:hover {
+   #dropdown.dropdown-menu a:hover {
         background: #15DF89;
         color: #ffffff;
+    }
+
+    .footer-btn:hover {
+        background: #15DF89;
+        color: #ffffff; 
     }
 
     .dropdown-menu {
@@ -991,11 +973,6 @@ hr{
         text-decoration: none;
     }
 
-    #dropdown.dropdown-menu a:hover{
-        background: #15DF89;
-        color: #ffffff;
-    }   
-
     .dropdown-links {
         font-size: 15px;
         font-weight: 400;
@@ -1003,4 +980,18 @@ hr{
     }
 }
 
-/* Code above was written  by Frankie */
+
+@media (max-width:768px) {
+    .slidingVertical span {
+        display: inline;
+        top: 30%;
+        left: 15%;
+    }
+}
+@media (max-width: 690px) {
+    .slidingVertical span {
+        display: inline; 
+        top:8%;
+        left: 1%;
+    }
+}
