@@ -18,17 +18,7 @@ body{
     font-family: "Open Sans", "Helvetica Neue", Raleway, sans-serif;
 }
 
-/* div - process starts*/
-.container-process, .container-projects{
-    background-color: #ffffff;
-    margin: 0 auto; 
-    padding-top: 5rem;
-    padding-bottom: 3rem;
-    text-align: center;
-    width: 100%;
-}
-
-.container-process h1, .container-projects h1{
+h1{
     color: #7f7f7f;
     font-size: 26px;
     font-weight: 500;
@@ -36,7 +26,24 @@ body{
     line-height: 43px;
 }
 
-#process, #projects, #overview, #testimonials{ 
+/* div - process starts*/
+.container-process{
+    background-color: #ffffff;
+    margin: 0 auto; 
+    padding-top: 5rem;
+    text-align: center;
+    width: 100%;
+}
+
+.container-process h1{
+    color: #7f7f7f;
+    font-size: 27px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    line-height: 43px;
+}
+
+#process{ 
     align-items: center;
     display: grid;
     grid-gap: 0.5rem;
@@ -65,16 +72,15 @@ body{
     width: 14rem;
 }
 
-#process h2, #overview h2, .flex-col h2{
+#process h2{
     color: #7f7f7f;
     font-size: 21px;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 34px;
     padding: 0.5rem 0;
-    text-align: center;
 }
 
-#process p, #overview p, .flex-col{
+#process p{
     color: #7f7f7f;
     font-size: 14px;
     font-weight: 400;
@@ -84,10 +90,96 @@ body{
 }
 /* div - process ends */
 
+/* div - overview starts*/
+.container-overview{
+    background-color: #e6e6e6;
+    margin: 0 auto;
+    padding-bottom:0.3%;
+    text-align: center;
+    width: 100%;
+}
+
+.pro-overview{
+    background-color: #BBBBBB;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    line-height: 31px;
+    padding: 0.5rem 0; 
+}
+
+#overview{   
+    align-items: center;
+    background-color: #F8F8F8;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+    grid-gap: 3rem;
+    justify-content: center;
+    padding: 6rem 0 8rem 0;
+}
+
+#overview img{
+    height: 13rem;
+    width: 13rem;
+}
+
+#overview h2{
+    color: #7f7f7f;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 34px;
+    padding: 0.5rem 0;
+    text-align: center;
+}
+
+#overview span{
+    font-size: 21px;
+    font-weight: 400;
+}
+
+#overview span .three{
+    font-size: 21px;
+    font-weight: 400;
+    vertical-align: text-bottom;
+}
+
+#overview p{
+    color: #7f7f7f;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    margin: 0 auto;
+    max-width: 270px; /*To display text in the middle*/
+    padding: 0 0.5rem; 
+    text-align: center;
+}
+/* div - overview ends */
+
 /* div - projects starts */
+.container-projects{
+    background-color: #ffffff;
+    margin: 0 auto; 
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    text-align: center;
+    width: 100%;
+}
+
+.container-projects h1{
+    color: #7f7f7f;
+    font-size: 26px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    line-height: 43px;
+}
+
 #projects{
+    align-items: center;
+    display: grid;
     grid-gap: 4rem;
     grid-template-columns: repeat(auto-fit, minmax(320px, auto));
+    justify-content: center;
     padding: 6rem 0;
 }
 
@@ -164,54 +256,6 @@ body{
     padding: 5px;
 }
 /* div - projects ends */
-
-/* div - overview starts*/
-.container-overview, .container-testimonials {
-    background-color: #e6e6e6;
-    margin: 0 auto;
-    padding-bottom:0.3%;
-    text-align: center;
-    width: 100%;
-}
-
-.pro-overview, .title-testimonials, .container-testimonials h1, .section-header{
-    background-color: #BBBBBB;
-    color: white;
-    font-size: 20px;
-    font-weight: 500;
-    letter-spacing: 2px;
-    line-height: 31px;
-    padding: 0.5rem 0; 
-}
-
-#overview, #testimonials{
-    background-color: #F8F8F8;
-    grid-template-columns: repeat(auto-fit, minmax(280px, auto));
-    grid-gap: 3rem;
-    padding: 6rem 0 8rem 0;
-}
-
-#overview img{
-    height: 13rem;
-    width: 13rem;
-}
-
-#overview span{
-    font-size: 21px;
-    font-weight: 400;
-}
-
-#overview span .three{
-    font-size: 21px;
-    font-weight: 400;
-    vertical-align: text-bottom;
-}
-
-#overview p{
-    margin: 0 auto;
-    max-width: 270px; /*To display text in the middle*/ 
-}
-/* div - overview ends */
 
 /*Media queries*/
 @media only screen and (max-width: 1024px){
@@ -379,7 +423,7 @@ hr{
 }
 
 /* Header of the section "What makes Chingu unique" */
-/* .section-header {
+.section-header {
   background-color: #a9a9a9;
   color: white;
   font-size: 21px;
@@ -388,7 +432,7 @@ hr{
   line-height: 2.5em;
   padding: 0.5em auto;
   text-align: center; 
-} */
+}
 
 .flex-container {
   display: inline-flex;
@@ -396,7 +440,6 @@ hr{
   justify-content: center;
 }
 
-/*
 .flex-col {
   color: #7f7f7f;
   font-size: 14px;
@@ -406,21 +449,15 @@ hr{
   margin-bottom: 0;
   text-align: center;
   width: 300px;
-}*/
-
-.flex-col {
-    margin: 10% auto;
-    margin-bottom: 0;
-    width: 300px;
 }
 
-/* .flex-col h3 {
+.flex-col h3 {
   color: #7f7f7f;
   font-size: 21px;
   font-weight: 400;
   line-height: 33.6px;
   margin: 25px auto;
-}*/
+}
 
 .flex-col p {
   margin-left: 10%;
@@ -434,6 +471,27 @@ hr{
 
 /* Code written by Frankie */
 /* What are people saying about Chingu section */
+.container-testimonials {
+    background-color: #e6e6e6;
+    margin: 0 auto;
+    padding-bottom:0.3%;
+    text-align: center;
+    width: 100%;
+}
+
+.container-testimonials h1{
+    background-color: #BBBBBB;
+}
+
+#testimonials {
+    align-items: center;
+    background-color: #F8F8F8;
+    display: grid;
+    grid-gap: 2.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(320px, auto));
+    justify-content: center;
+    padding: 6rem 0;
+}
 
 .title-testimonials {
     color: #ffffff;
@@ -442,7 +500,7 @@ hr{
     letter-spacing: 2px;
     line-height: 31px;
     padding: 10px 0 ;
-} */
+}
 
 .testimonial-box {    
     display: flex;
@@ -974,6 +1032,3 @@ hr{
         left: 1%;
     }
 }
-
-
-/* Trying to reset the code */
