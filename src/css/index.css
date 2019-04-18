@@ -26,6 +26,15 @@ h1{
     line-height: 43px;
 }
 
+h2{
+    color: #7f7f7f;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 34px;
+    padding: 0.5rem 0;
+    text-align: center;
+}
+
 /* navigation bar */
 nav {
     background-color: #080a38;
@@ -86,8 +95,8 @@ nav {
     width: 85%;
   }
   
-  /* Setting background for whole section "What makes Chingu unique" */
-  #unique-chingu {
+  /* Setting background for "What makes Chingu unique" and "PROGRAM OVERVIEW" sections*/
+  #unique-chingu, .container-overview, .container-testimonials {
     background-color: #f8f8f8;
     text-align: center;
     padding-bottom:10%;
@@ -112,7 +121,7 @@ nav {
     text-align: center; 
   }
   
-  .flex-container {
+  .flex-container, #overview {
     display: inline-flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -151,7 +160,7 @@ nav {
 
 /* START of Nisha's sections*/
 /* div - process starts*/
-.container-process{
+.container-process, .container-projects{
     background-color: #ffffff;
     margin: 0 auto; 
     padding-top: 5rem;
@@ -159,7 +168,7 @@ nav {
     width: 100%;
 }
 
-.container-process h1{
+.container-process h1, .container-projects h1{
     color: #7f7f7f;
     font-size: 27px;
     font-weight: 500;
@@ -167,15 +176,23 @@ nav {
     line-height: 43px;
 }
 
-#process{ 
+#process, #projects{ 
     align-items: center;
-    display: grid;
+    display: grid; 
+    justify-content: center;
+}
+
+#process{
     grid-gap: 0.5rem;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    justify-content: center;
     padding: 8rem 6rem 9rem 6rem;
 }
 
+#projects{
+    grid-gap: 4rem;
+    grid-template-columns: repeat(auto-fit, minmax(320px, auto));
+    padding: 6rem 0;
+}
 .seperate{
     border: 1px solid #d9d9d9;
     border-radius: 0px;
@@ -215,13 +232,6 @@ nav {
 /* div - process ends */
 
 /* div - overview starts*/
-.container-overview{
-    background-color: #e6e6e6;
-    margin: 0 auto;
-    padding-bottom:0.3%;
-    text-align: center;
-    width: 100%;
-}
 
 .pro-overview{
     background-color: #BBBBBB;
@@ -233,28 +243,10 @@ nav {
     padding: 0.5rem 0; 
 }
 
-#overview{   
-    align-items: center;
-    background-color: #F8F8F8;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, auto));
-    grid-gap: 3rem;
-    justify-content: center;
-    padding: 6rem 0 8rem 0;
-}
 
 #overview img{
     height: 13rem;
     width: 13rem;
-}
-
-#overview h2{
-    color: #7f7f7f;
-    font-size: 21px;
-    font-weight: 400;
-    line-height: 34px;
-    padding: 0.5rem 0;
-    text-align: center;
 }
 
 #overview span{
@@ -281,22 +273,6 @@ nav {
 /* div - overview ends */
 
 /* div - projects starts */
-.container-projects{
-    background-color: #ffffff;
-    margin: 0 auto; 
-    padding-top: 5rem;
-    padding-bottom: 3rem;
-    text-align: center;
-    width: 100%;
-}
-
-.container-projects h1{
-    color: #7f7f7f;
-    font-size: 26px;
-    font-weight: 500;
-    letter-spacing: 2px;
-    line-height: 43px;
-}
 
 #projects{
     align-items: center;
@@ -380,19 +356,10 @@ nav {
     padding: 5px;
 }
 /* div - projects ends */
-
-
 /* Nishavijai worked on the above CSS for (chingu process, program overview and past projects) */
 
 /* Code written by Frankie */
 /* What are people saying about Chingu section */
-.container-testimonials {
-    background-color: #e6e6e6;
-    margin: 0 auto;
-    padding-bottom:0.3%;
-    text-align: center;
-    width: 100%;
-}
 
 .container-testimonials h1{
     background-color: #BBBBBB;
@@ -406,6 +373,7 @@ nav {
     grid-template-columns: repeat(auto-fit, minmax(320px, auto));
     justify-content: center;
     padding: 6rem 0;
+    padding-bottom:0;
 }
 
 .title-testimonials {
@@ -598,8 +566,6 @@ nav {
 .fab:hover {
     color: #15DF89;
 }
-
-
 
 .authors .fa-heart {
     color: red;
