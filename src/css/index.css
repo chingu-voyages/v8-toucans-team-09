@@ -3,7 +3,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-} 
+}
 
 html,body
 {
@@ -110,10 +110,10 @@ nav {
   }
   
   /* Header of the section "What makes Chingu unique" */
-  .section-header {
-    background-color: #a9a9a9;
+  .section-header, .pro-overview, .title-testimonials {
+    background-color: #BBBBBB;
     color: white;
-    font-size: 21px;
+    font-size: 20px;
     font-weight: 500;
     letter-spacing: 2px;
     line-height: 2.5em;
@@ -164,16 +164,9 @@ nav {
     background-color: #ffffff;
     margin: 0 auto; 
     padding-top: 5rem;
+    padding-bottom: 3rem;
     text-align: center;
     width: 100%;
-}
-
-.container-process h1, .container-projects h1{
-    color: #7f7f7f;
-    font-size: 27px;
-    font-weight: 500;
-    letter-spacing: 2px;
-    line-height: 43px;
 }
 
 #process, #projects{ 
@@ -185,22 +178,17 @@ nav {
 #process{
     grid-gap: 0.5rem;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    padding: 8rem 6rem 9rem 6rem;
+    padding: 8rem 5rem;
 }
 
-#projects{
-    grid-gap: 4rem;
-    grid-template-columns: repeat(auto-fit, minmax(320px, auto));
-    padding: 6rem 0;
-}
 .seperate{
     border: 1px solid #d9d9d9;
     border-radius: 0px;
     box-shadow: 0 3px 6px #e6e6e6;
-    height: 22rem;
+    height: 360px;
     margin: 0 auto;
     padding: 1rem; 
-    width: 17rem;
+    width: 280px;
 }
 
 .seperate:hover{
@@ -213,15 +201,7 @@ nav {
     width: 14rem;
 }
 
-#process h2{
-    color: #7f7f7f;
-    font-size: 21px;
-    font-weight: 400;
-    line-height: 34px;
-    padding: 0.5rem 0;
-}
-
-#process p{
+#process p, #overview p{
     color: #7f7f7f;
     font-size: 14px;
     font-weight: 400;
@@ -232,18 +212,6 @@ nav {
 /* div - process ends */
 
 /* div - overview starts*/
-
-.pro-overview{
-    background-color: #BBBBBB;
-    color: white;
-    font-size: 20px;
-    font-weight: 500;
-    letter-spacing: 2px;
-    line-height: 31px;
-    padding: 0.5rem 0; 
-}
-
-
 #overview img{
     height: 13rem;
     width: 13rem;
@@ -261,25 +229,15 @@ nav {
 }
 
 #overview p{
-    color: #7f7f7f;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 22px;
     margin: 0 auto;
     max-width: 270px; /*To display text in the middle*/
-    padding: 0 0.5rem; 
-    text-align: center;
 }
 /* div - overview ends */
 
 /* div - projects starts */
-
 #projects{
-    align-items: center;
-    display: grid;
     grid-gap: 4rem;
     grid-template-columns: repeat(auto-fit, minmax(320px, auto));
-    justify-content: center;
     padding: 6rem 0;
 }
 
@@ -308,9 +266,10 @@ nav {
 #projects .description h2{
     font-size: 14px;
     font-weight: 600;
-    letter-spacing: -0.9px;
+    letter-spacing: -0.2px;
     line-height: 23px;
     padding: 0.2rem;
+    text-align: left;
 }
 
 #projects .description span{
@@ -360,11 +319,6 @@ nav {
 
 /* Code written by Frankie */
 /* What are people saying about Chingu section */
-
-.container-testimonials h1{
-    background-color: #BBBBBB;
-}
-
 #testimonials {
     align-items: center;
     background-color: #F8F8F8;
@@ -374,15 +328,6 @@ nav {
     justify-content: center;
     padding: 6rem 0;
     padding-bottom:0;
-}
-
-.title-testimonials {
-    color: #ffffff;
-    font-weight: 500;
-    font-size: 20px;
-    letter-spacing: 2px;
-    line-height: 31px;
-    padding: 10px 0 ;
 }
 
 .testimonial-box {    
@@ -442,7 +387,7 @@ nav {
     
 }
 
-#testimonials .testimonials .testimonial-user .user{
+.testimonial-user .user{
     font-size: 17px;
     font-weight: 400;
     letter-spacing: 0.5px;
@@ -450,7 +395,6 @@ nav {
 }
 
 /* Ready To Try Chingu section */
-
 .container-cta {
     background-color: #ffffff;
     margin: 0 auto;
@@ -493,7 +437,6 @@ nav {
 }
 
 /* Footer section of webpage  */
-
 .footer-content {
     align-items: center;
     background-color: #0F143A;
